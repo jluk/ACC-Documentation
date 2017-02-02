@@ -5,7 +5,7 @@ The requirements are:
 * [an Azure account](https://azure.microsoft.com/pricing/free-trial/)
 
 ## Sign in
-Signed into the Azure portal with your Azure account identity, click **+ New** in the upper left corner:
+Sign into the Azure portal with your Azure account identity, click **+ New** in the upper left corner:
 
 ![screen1](../media/virtual-machines-linux-quick-create-portal/screen1.png)
 
@@ -40,7 +40,7 @@ Delete your resource group and VM: <br>
 
 You can now exit the console with the 'x' in the right corner of the console window. You session will be active for 10 minutes after the last output at which point it will timeout. You may reactivate a console anytime for free.
 
-## Access persistent storage
+## Attach persistent storage
 For preview we allow you to attach any Azure Files Storage account you have. This enables you to share persistent storage with teams to share scripts, docs, or other files. [Azure Files storage costs](https://azure.microsoft.com/en-us/pricing/details/storage/files/) will be charged baesd on storage consumption.
 
 ### First time

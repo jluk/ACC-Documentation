@@ -18,17 +18,19 @@ Your console is set to timeout after 10 minutes of zero output activity. You can
 ## Availability
 This free service is currently available to select Microsoft internals only.
 
-## VM Sku Size
+## VM sku
 Your console is running on a single-tenant A0.
 
 ## Pricing
 This is a free service to all Azure customers.
 
+## Supported browsers
+We actively support Chrome, Safari, IE, and Edge.
+
 ## Feedback
 Please utilize the smiley face icons in Ibiza to provide feedback about the ACC.
 
 ## Updates
-
 
 ## Known Issues
 1. CLI 2.0 latency is a known to be slow, 4-5 second latency per command. This is an open issue with the CLI team.
