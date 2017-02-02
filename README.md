@@ -10,8 +10,10 @@ This service is launched via the Ibiza portal and as a result, allows single-cli
 In order to receive internal access you must:
 
 1. Be whitelisted - this was achieved via a sign-up form on the blog announcement through January 10th, internals may email juluk@microsft.com to request further access. <br>
-2. Navigate to [aka.ms/accbeta](www.aka.ms/accbeta). This shortlink provides full Ibiza access so it can be used as a replacement link. <br>
+2. Navigate to [aka.ms/accbeta] (www.aka.ms/accbeta). This shortlink provides full Ibiza access so it can be used as a replacement link. <br>
 3. Launch the console via the terminal icon on the top navigation pane.
+
+Your console is set to timeout after 10 minutes of zero output activity. You can reactivate your console by pressing the "Enter" key after timeout.
 
 ## Availability
 This free service is currently available to select Microsoft internals only.
@@ -24,6 +26,9 @@ This is a free service to all Azure customers.
 
 ## Feedback
 Please utilize the smiley face icons in Ibiza to provide feedback about the ACC.
+
+## Updates
+
 
 ## Known Issues
 1. CLI 2.0 latency is a known to be slow, 4-5 second latency per command. This is an open issue with the CLI team.
