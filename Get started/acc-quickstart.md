@@ -17,7 +17,7 @@ You are now authenticated and ready to begin use.
 ## Command line usage
 Try the Azure CLI 2.0 with 'az --version'. This will output versions of each Azure SDK installed.
 
-### Set your subscrciption
+### Set your subscription
 1. Check subscriptions you have access to: <br>
 `az account list`
 2. Copy paste the id of your target subscription from the json output: <br>
@@ -26,7 +26,6 @@ Try the Azure CLI 2.0 with 'az --version'. This will output versions of each Azu
 `az account set --subscription ExampleGUID`
 
 ### Create a resource group
-
 `az resource group create -l westus -n MyRG` <br>
 You can now search for `MyRG` in Portal and utilize the GUI if preferred.
 
@@ -38,9 +37,9 @@ Create an Ubuntu VM in your new resource group: <br>
 Delete your resource group and VM: <br>
 `az group delete -n MyRG`
 
-You can now exit the console with the 'x' in the right corner of the console window. You session will be active for 10 minutes after the last output at which point it will timeout. You may reactivate a console anytime for free.
+Exit the console using the 'x' in the right corner of the console window. Console sessions will be active for 10 minutes after the last output at which point it will timeout. You may reactivate a console anytime for free.
 
-## Attach persistent storage
+## Attach persistent storage (Coming soon)
 For preview we allow you to attach any Azure Files Storage account you have. This enables you to share persistent storage with teams to share scripts, docs, or other files. [Azure Files storage costs](https://azure.microsoft.com/en-us/pricing/details/storage/files/) will be charged baesd on storage consumption.
 
 ### First time

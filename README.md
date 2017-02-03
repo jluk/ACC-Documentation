@@ -19,10 +19,10 @@ Your console is set to timeout after 10 minutes of zero output activity. You can
 This free service is currently available to select Microsoft internals only.
 
 ## VM sku
-Your console is running on a single-tenant A0.
+Your console is running on a single-tenant F1 during preview.
 
 ## Pricing
-This is a free service to all Azure customers.
+This will be a free service to all Azure customers.
 
 ## Supported browsers
 We actively support Chrome, Safari, IE, and Edge.
