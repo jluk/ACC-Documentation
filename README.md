@@ -1,14 +1,14 @@
 # Azure Cloud Console (preview)
 This repo includes staged documents for the Azure Cloud Console. Please refer to these documents for updates throughout previews.
 
-## About Azure Cloud Console
+## About Cloud Console
 The Azure Cloud Console is a free service providing a browser accessible BASH shell. 
 This console provides users with the ability to interact with Azure resources via the Azure CLI 2.0 which is pre-installed. 
 Additional developer tools are also pre-installed, if you find vital tools missing please email juluk@microsoft.com and we will evaluate including more tools. 
 
 This service is launched via the Azure Portal and as a result, allows single-click cli access to your subscription resources.
 
-## Access 
+## Preview access 
 In order to receive internal access you must:
 
 1. Be whitelisted - this was achieved via a sign-up form on the blog announcement through January 10th, internals may email juluk@microsft.com to request further access. <br>
@@ -18,8 +18,8 @@ In order to receive internal access you must:
 ## Console timeout
 Your console is set to timeout after 10 minutes of zero output activity. You can reactivate your console by pressing the "Enter" key after timeout.
 
-## Availability
-This service is currently available to select Microsoft internals only.
+## Features
+Check the full [feature list here](../Concepts/acc-features.md).
 
 ## VM sku
 Your console is running on a single-tenant F1 during preview.
