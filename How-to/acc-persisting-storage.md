@@ -14,7 +14,8 @@ Options: <br>
   -f | Fileshare name <br>
   -? | -h | --help Shows this usage text <br>
 
-This will prompt you for information to select an Azure Files account or create one for you.
+This will prompt you for information to select an Azure Files account or create one for you. 
+From here you are able to interact with any files stored on your Files account.
 
 ## How it works
 The cloud console will add a "tag" to your storage account labeled "cloudconsole". 

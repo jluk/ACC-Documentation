@@ -19,10 +19,10 @@ In order to receive internal access you must:
 Your console is set to timeout after 10 minutes of zero output activity. You can reactivate your console by pressing the "Enter" key after timeout.
 
 ## Features
-Check the full [feature list here](../Concepts/acc-features.md).
+Check the full [feature list here](Concepts/acc-features.md).
 
 ## VM sku
-Your console is running on a single-tenant F1 during preview.
+Your console is running in a Debian-based Linux container on a single-tenant F1 during preview.
 
 ## Pricing
 This will be a free service to all Azure customers.
@@ -31,7 +31,7 @@ This will be a free service to all Azure customers.
 The cloud console is supported for Chrome, Firefox, Safari, IE, and Edge.
 
 ## Feedback
-Please utilize the smiley face icons in Ibiza to provide feedback about the ACC.
+Please utilize the feedback icons in Ibiza to provide feedback about the ACC.
 
 ## Updates
 
