@@ -13,14 +13,18 @@ This allows sharing files across teams who have access to the Azure Files accoun
 To learn more visit [Attaching file storage](../How-to/acc-persisting-storage).
 
 ## Pre-installed tools (preview)
-* bash
+* bash, sh 
 * Azure CLI 1.0 and 2.0
-* Vim, Nano
-* Git
+* less, jq
+* vim, Nano
+* npm, pip
+* git
+* Docker, Emacs, Gradle, Make, Maven, nvm (todo)
 
 ## Language support (preview)
 * Node.js
 * Python
+* Java, Go, Ruby, PHP (todo)
 
 ## Authentication
 Cloud Console takes care of authentication since it is launched from your Azure Portal homepage. No additional authorization is needed to access resources from the `az cli 2.0`.

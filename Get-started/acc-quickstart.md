@@ -39,12 +39,17 @@ Delete your resource group and VM: <br>
 
 Exit the console using the 'x' in the right corner of the console window. Console sessions will be active for 10 minutes after the last output at which point it will timeout. You may reactivate a console anytime for free.
 
-## Attach persistent storage (Coming soon)
-For preview we allow you to attach any Azure Files Storage account you have. This enables you to share persistent storage with teams to share scripts, docs, or other files. [Azure Files storage costs](https://azure.microsoft.com/en-us/pricing/details/storage/files/) will be charged baesd on storage consumption.
+## Attach persistent storage
+For preview we allow you to attach any Azure Files Storage account you have. Full details are detailed in the [persisting storage documentation.](../How-to/acc-persisting-storage.md)
+This enables you to share persistent storage with teams to share scripts, docs, or other files. 
+
+[Azure Files storage](https://azure.microsoft.com/en-us/pricing/details/storage/files/) will incur normal charges based on storage consumption.
 
 ### First time
+Type `createclouddrive` into your console to see all inputs required. Upon successful input, you will be prompted to restart your console with your chosen storage attached.
 
 ### Changing storage
+Follow the same steps as attaching for the first time to mount a different Azure File storage account.
 
 ## Next Steps
 [Learn more about Azure CLI 2.0] (https://docs.microsoft.com/en-us/cli/azure/) <br>
