@@ -31,6 +31,8 @@ This will be a free service to all Azure customers.
 The cloud console is supported for Chrome, Firefox, Safari, IE, and Edge.
 
 ## Feedback
+[Internal] Please provide feedback on the Cloud Console Teams discussion.
+
 Please utilize the feedback icons in Ibiza to provide feedback about the ACC.
 
 ## Updates
