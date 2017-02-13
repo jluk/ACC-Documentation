@@ -2,10 +2,12 @@
 This repo includes staged documents for the Azure Cloud Console. Please refer to these documents for updates throughout previews.
 
 ## About Cloud Console
-The Azure Cloud Console is a free service providing a browser accessible BASH shell. This shell is held within an ephemeral container provided free of charge by Azure. When your console times out you may receive a new container for your next session so state will not carry-over.
+The Azure Cloud Console is a free service providing a browser accessible BASH shell. 
+This console is provided from an ephemeral container provided free of charge by Azure. 
+Each console is provided on a per-session, per-user basis so state will only persist in storage explicitly attached for that purpose.
 
 ### Features
-* Browser accessible BASH shell with pre-installed Azure dev tools (email juluk@microsoft.com with new suggestions)
+* Browser accessible BASH shell with pre-installed Azure dev tools (submit requests for new tools in Teams discussion)
 * Automatic authentication launched from the Azure Portal
 * Bring your own storage for persistence across sessions
 
@@ -42,3 +44,4 @@ The cloud console is supported for Chrome, Firefox, Safari, IE, and Edge.
 1. Open issue with CLI 2.0 performance
 2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
 3. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
+4. Maintaining subscription state across sessions

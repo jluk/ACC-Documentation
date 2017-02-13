@@ -1,15 +1,17 @@
 # Persisting storage (preview)
-The cloud console allows users to attach their own Azure Files storage to maintain persistence across console sessions. 
-During preview we allow users to bring their own storage account to mount as the $HOME directory.
+The cloud console allows users to attach their own Azure Files storage to maintain file persistence across console sessions. 
+During preview we allow users to bring their own storage account to mount under the user's $HOME directory.
 
-As of **12/13/17** your file storage will mount as a directory in $HOME named `clouddrive`.
+As of **2/13/17** your file storage will mount as a directory within the user $HOME directory named `clouddrive`.
 
 **Note** This is under active development so expect behavior to evolve over time, please leave feedback on the Teams discussion for us to consider.
 
 ## Mount Azure Files
 From your Cloud Console run: <br>
-`createclouddrive -h`
+`createclouddrive -s mySub -g myRG -n exName -f myShare`
+This will mount existing File storage to your console or prompt you to create new storage to mount.
 
+To see more details run `createclouddrive -h`: <br>
 Options: <br>
   -s | Subscription ID or name <br>
   -g | Resource group name <br>
@@ -18,15 +20,16 @@ Options: <br>
   -f | Fileshare name <br>
   -? | -h | --help Shows this usage text <br>
 
-This will prompt you for information to select an Azure Files account or create one for you. 
-From here you are able to interact with any files stored on your Files account.
+You should now be able to upload/download to your fileshare from the `clouddrive` directory.
+Uploading and downloading from your local machine can be done via the Azure Files portal blades.
 
 ## How it works
-The cloud console will add a "tag" to your storage account labeled "cloudconsole". 
-When searching for the correct storage account to mount, the cloud console will grab the first account tagged with this marker.
+The cloud console will add a "tag" to your storage account labeled "cloud-console-files-for-user@domain.com : fileshareName". 
+Upon initializing your console session, the cloud console will search for the first account tagged with this marker.
 
-## Upload files
-You can utilize the Portal GUI for Azure Files to edit files held in storage. You can also edit/remove/add files from the console and see it reflect in the GUI.
+## Upload/download local files
+You can utilize the Portal GUI for Azure Files to edit files held in storage. 
+Editing/removing/adding files from within the console will also reflect in the Files GUI upon blade refresh.
 
 ## Next steps
 [ACC Quickstart](../Get-started/acc-quickstart.md)
