@@ -7,7 +7,7 @@ Each console is provided on a per-user, per-request basis. A console session wil
 no output activity. After this point you are not guaranteed the same container on a new request.
 
 ## Persistent storage (preview)
-The Cloud Console allows you to mount your own Azure Files Storage. This will be mounted as a directory within your $HOME directory called `clouddrive`.
+The Cloud Console allows you to mount your own Azure Files Storage.
 This allows sharing files across teams who have access to the Azure Files account and incurs usual charges associated with Azure Files.
 
 To learn more visit [Attaching file storage](../How-to/acc-persisting-storage).

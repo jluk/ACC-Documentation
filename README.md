@@ -15,7 +15,7 @@ Check the full [feature list here](Concepts/acc-features.md).
 In order to receive internal access you must:
 
 1. Be whitelisted - this was done via a sign-up form on the blog announcement through January 10th, internals may email juluk@microsft.com to request further access. <br>
-2. Navigate to [aka.ms/accbeta] (www.aka.ms/accbeta). This shortlink provides full Ibiza access so it can be used as a replacement link. <br>
+2. Navigate to [aka.ms/accbeta] (www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link. <br>
 3. Launch the console via the terminal icon on the top navigation pane.
 
 ## Console timeout
@@ -33,13 +33,12 @@ The cloud console is supported for Chrome, Firefox, Safari, IE, and Edge.
 ## Feedback
 [Internal] Please provide feedback on the Cloud Console Teams discussion.
 
-Please utilize the feedback icons in Ibiza to provide feedback about the ACC.
-
 ## Updates
-* Mounting storage - initial state live
+* Mounting storage - initial state live (currently as `clouddrive` directory found in user's HOME)
 * Tooling 2.0 - TBD
 * Force restart - TBD
 
 ## Known Preview Issues
 1. Open issue with CLI 2.0 performance
 2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
+3. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
