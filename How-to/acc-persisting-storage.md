@@ -1,6 +1,6 @@
 # Persisting storage (preview)
 The cloud console allows users to attach their own Azure Files storage to maintain file persistence across console sessions. 
-During preview we allow users to bring their own storage account to mount under the user's $HOME directory.
+During preview we allow users to bring their own storage account to mount under the user's $HOME directory. Only files in this mounted directory will be persisted across sessions.
 
 As of **2/13/17** your file storage will mount as a directory within the user $HOME directory named `clouddrive`.
 
@@ -9,9 +9,11 @@ As of **2/13/17** your file storage will mount as a directory within the user $H
 ## Mount Azure Files
 From your Cloud Console run: <br>
 `createclouddrive -s mySub -g myRG -n exName -f myShare`
+
 This will mount existing File storage to your console or prompt you to create new storage to mount.
 
 To see more details run `createclouddrive -h`: <br>
+
 Options: <br>
   -s | Subscription ID or name <br>
   -g | Resource group name <br>
@@ -20,7 +22,7 @@ Options: <br>
   -f | Fileshare name <br>
   -? | -h | --help Shows this usage text <br>
 
-You should now be able to upload/download to your fileshare from the `clouddrive` directory.
+You are now be able to upload/download to your fileshare from the `clouddrive` directory.
 Uploading and downloading from your local machine can be done via the Azure Files portal blades.
 
 ## How it works
@@ -32,5 +34,5 @@ You can utilize the Portal GUI for Azure Files to edit files held in storage.
 Editing/removing/adding files from within the console will also reflect in the Files GUI upon blade refresh.
 
 ## Next steps
-[ACC Quickstart](../Get-started/acc-quickstart.md)
-[About Azure File storage](https://docs.microsoft.com/en-us/azure/storage/storage-introduction#file-storage)
+[ACC Quickstart](../Get-started/acc-quickstart.md) <br>
+[About Azure File storage](https://docs.microsoft.com/en-us/azure/storage/storage-introduction#file-storage) <br>
