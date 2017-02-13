@@ -5,7 +5,7 @@ This repo includes staged documents for the Azure Cloud Console. Please refer to
 The Azure Cloud Console is a free service providing a browser accessible BASH shell. This shell is held within an ephemeral container provided free of charge by Azure. When your console times out you may receive a new container for your next session so state will not carry-over.
 
 ### Features
-* Browser accessible BASH shell with pre-installed Azure dev tools (email juluk@microsoft.com with important missing tools)
+* Browser accessible BASH shell with pre-installed Azure dev tools (email juluk@microsoft.com with new suggestions)
 * Automatic authentication launched from the Azure Portal
 * Bring your own storage for persistence across sessions
 
@@ -34,7 +34,10 @@ The cloud console is supported for Chrome, Firefox, Safari, IE, and Edge.
 Please utilize the feedback icons in Ibiza to provide feedback about the ACC.
 
 ## Updates
+* Mounting storage - initial state live
+* Tooling 2.0 - TBD
+* Force restart - TBD
 
 ## Known Preview Issues
-1. CLI 2.0 latency is a known to be slow, 4-5 second latency per command. This is an open issue with the CLI team.
-2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console will clear the state.
+1. Open issue with CLI 2.0 performance
+2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
