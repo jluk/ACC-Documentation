@@ -30,7 +30,7 @@ Your console is running in a Debian-based Linux container on a single-tenant F1 
 This will be a free service to all Azure customers.
 
 ## Supported browsers
-The cloud console is supported for Chrome, Firefox, Safari, IE, and Edge.
+The Cloud Console is supported for Chrome, Firefox, Safari, IE, and Edge.
 
 ## Feedback
 [Internal] Please provide feedback on the Cloud Console Teams discussion.

@@ -2,12 +2,12 @@
 The Cloud Console allows users to attach their own Azure Files storage to maintain file persistence across console sessions. 
 During preview we allow users to bring their own storage account to mount under the user's $HOME directory. Only files in this mounted directory will be persisted across sessions.
 
-As of **2/13/17** your file storage will mount as a directory within the user $HOME directory named `clouddrive`.
-
-**Note** This is under active development so expect behavior to evolve over time, please leave feedback on the Teams discussion for us to consider.
+**NOTE 2/13/17** 
+* Your file storage will mount as a directory within the user $HOME directory named `clouddrive`.
+* This is under active development so expect behavior to evolve over time, please leave feedback on the Teams discussion for us to consider.
 
 ## How it works
-Upon choosing to mount a storage account, the Cloud Console will add a "tag" to the selected storage account using the format: <br>
+Upon choosing to mount an Azure Files storage account, the Cloud Console will add a "tag" to the selected storage account using the format: <br>
 
 | Key | Value |
 |:-------------:|:-------------:|
@@ -15,9 +15,10 @@ Upon choosing to mount a storage account, the Cloud Console will add a "tag" to 
 
 Upon initialization, every Cloud Console session searches for and mounts the storage account containing this tag.
 
-## Mount Azure Files
-From your Cloud Console run: <br>
-`createclouddrive -s mySub -g myRG -n exName -f myShare`
+## Mounting a storage account
+To mount an Azure Files storage account: <br>
+1. Open a Cloud Console session
+2. Run: `createclouddrive -s mySub -g myRG -n exName -f myShare`
 
 This will prompt you to restart the console or prompt you to create a new storage account if it does not already exist.
 
