@@ -8,9 +8,10 @@ As of **2/13/17** your file storage will mount as a directory within the user $H
 
 ## How it works
 Upon choosing to mount a storage account, the Cloud Console will add a "tag" to the selected storage account using the format: <br>
-| Key        | Value           |
+
+| Key | Value |
 |:-------------:|:-------------:|
-| cloud-console-files-for-user@domain.com      | fileshareName |
+|cloud-console-files-for-user@domain.com|fileshareName|
 
 Upon initialization, every Cloud Console session searches for and mounts the storage account containing this tag.
 

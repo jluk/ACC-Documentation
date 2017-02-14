@@ -1,10 +1,10 @@
 # Features
-Azure Cloud Console offers a full bash shell to interact with Azure from.
+Azure Cloud Console offers a full bash shell to manage resources and develop applications on Azure directly from the Azure Portal.
 
-## Console session (preview)
+## Browser-access to a BASH shell (preview)
 Azure provides you with your own Linux container running on a single-tenant F1 VM running a Debian-based Linux operating system.
-Each console is provided on a per-user, per-request basis. A console session will persist state while active and terminate after 10 minutes of 
-no output activity. After this point you are not guaranteed the same container on a new request.
+Each console is provided on a per-session, per-user basis. A console session will persist state while active and terminate after 10 minutes of 
+no output activity. After this point you are not guaranteed the same container on a new request for a console.
 
 ## Persistent storage (preview)
 The Cloud Console allows you to mount your own Azure Files Storage.
@@ -35,3 +35,5 @@ Cloud Console takes care of authentication since it is launched from your Azure 
 The Cloud Console collects telemetry through the `az cli 2.0` about what resources are being used. No personally identifiable information such as arguments for commands are captured and as a result collected telemetry can never be tied back to individual users.
 
 ## Next steps
+[ACC Quickstart](../Get-started/acc-quickstart.md) <br>
+[Azure CLI 2.0 documentation](https://docs.microsoft.com/en-us/cli/azure/) <br>
