@@ -1,6 +1,9 @@
 # Azure Cloud Console (preview)
 This repo includes staged documents for the Azure Cloud Console. Please refer to these documents for updates throughout previews.
 
+* Access via [aka.ms/accbeta](www.aka.ms/accbeta)
+* Shortlink to these docs via [aka.ms/accbetadocs](aka.ms/accbetadocs)
+
 ## About Cloud Console
 The Azure Cloud Console is a free service providing a browser accessible BASH shell. 
 This console is provided from an ephemeral container provided free of charge by Azure. 
