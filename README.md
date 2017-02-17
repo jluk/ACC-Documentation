@@ -4,12 +4,12 @@ This repo includes staged documents for the Azure Cloud Console. Please refer to
 ## About Cloud Console
 The Azure Cloud Console is a free service providing a browser accessible BASH shell. 
 This console is provided from an ephemeral container provided free of charge by Azure. 
-Each console is provided on a per-session, per-user basis so state will only persist in storage explicitly attached for that purpose.
+Each console is provided on a per-session, per-user basis so state will only persist in storage explicitly attached for that purpose. System-wide changes will not transfe across sessions.
 
 ### Features
 * Browser accessible BASH shell with pre-installed Azure dev tools (submit requests for new tools in Teams discussion)
 * Automatic authentication launched from the Azure Portal
-* Bring your own storage for persistence across sessions
+* Bring your own storage for file persistence across sessions
 
 Check the full [feature list here](Concepts/acc-features.md).
 
@@ -19,6 +19,8 @@ In order to receive internal access you must:
 1. Be whitelisted - this was done via a sign-up form on the blog announcement through January 10th, internals may email juluk@microsft.com to request further access. <br>
 2. Navigate to [aka.ms/accbeta] (www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link. <br>
 3. Launch the console via the terminal icon on the top navigation pane.
+
+Your initial session will take ~90 seconds to configure, subsequent sessions will be much faster.
 
 ## Console timeout
 Your console is set to timeout after 10 minutes of zero output activity. You can reactivate your console by pressing the "Enter" key after timeout.
@@ -41,7 +43,7 @@ The Cloud Console is supported for Chrome, Firefox, Safari, IE, and Edge.
 * Force restart - TBD
 
 ## Known Preview Issues
-1. Open issue with CLI 2.0 performance
+1. CLI 2.0 cmd and autocomplete performance
 2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
 3. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
 4. Maintaining subscription state across sessions
