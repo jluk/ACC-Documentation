@@ -1,8 +1,8 @@
 # Azure Cloud Console (preview)
 This repo includes staged documents for the Azure Cloud Console. Please refer to these documents for updates throughout previews.
 
-* Access via [aka.ms/accbeta](www.aka.ms/accbeta)
-* Shortlink to these docs via [aka.ms/accbetadocs](aka.ms/accbetadocs)
+* Access via [aka.ms/accbeta] (https://www.aka.ms/accbeta)
+* Shortlink to these docs via [aka.ms/accbetadocs] (https://www.aka.ms/accbetadocs)
 
 ## About Cloud Console
 The Azure Cloud Console is a free service providing a browser accessible BASH shell. 
@@ -20,7 +20,7 @@ Check the full [feature list here](Concepts/acc-features.md).
 In order to receive internal access you must:
 
 1. Be whitelisted - this was done via a sign-up form on the blog announcement through January 10th, internals may email juluk@microsft.com to request further access. <br>
-2. Navigate to [aka.ms/accbeta] (www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link. <br>
+2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link. <br>
 3. Launch the console via the terminal icon on the top navigation pane.
 
 Your initial session will take ~90 seconds to configure, subsequent sessions will be much faster.
