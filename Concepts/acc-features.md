@@ -10,7 +10,7 @@ no output activity. After this point you are not guaranteed the same container o
 The Cloud Console allows you to mount your own Azure Files Storage.
 This allows sharing files across teams who have access to the Azure Files account and incurs usual charges associated with Azure Files.
 
-To learn more visit [Attaching file storage](../How-to/acc-persisting-storage).
+To learn more visit [Attaching file storage](../How-to/acc-persisting-storage.md).
 
 ## Pre-installed tools (preview)
 Since the Cloud Console runs off of a container image, the Azure platform will manage updating tools on your behalf so each session offers the latest and greatest tools.
