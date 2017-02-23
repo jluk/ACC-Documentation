@@ -1,6 +1,8 @@
 # Azure Cloud Console (preview)
 This repo includes staged documents for the Azure Cloud Console. Please refer to these documents for updates throughout previews.
 
+![](media/beta-screenshot.png)
+
 * Access via [aka.ms/accbeta] (https://www.aka.ms/accbeta)
 * Shortlink to these docs via [aka.ms/accbetadocs] (https://www.aka.ms/accbetadocs)
 

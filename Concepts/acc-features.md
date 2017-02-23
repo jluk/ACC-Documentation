@@ -7,8 +7,10 @@ Each console is provided on a per-session, per-user basis. A console session wil
 no output activity. After this point you are not guaranteed the same container on a new request for a console.
 
 ## Persistent storage (preview)
-The Cloud Console allows you to mount your own Azure Files Storage.
+Since the Cloud Console is allocated on a per-session basis with an ephemeral container, files will not persist across sessions by default.
+However, you may mount your own fileshares in Azure Files storage to persist files across sessions.
 This allows sharing files across teams who have access to the Azure Files account and incurs usual charges associated with Azure Files.
+Once a fileshare is associated with your console, it will be mounted on every console created for you.
 
 To learn more visit [Attaching file storage](../How-to/acc-persisting-storage.md).
 
