@@ -5,9 +5,11 @@ This repo includes staged documents for the Azure Cloud Console. Please refer to
 * Shortlink to these docs via [aka.ms/accbetadocs] (https://www.aka.ms/accbetadocs)
 
 ## About Cloud Console
-The Azure Cloud Console is a free service providing a browser accessible BASH shell. 
-This console is provided from an ephemeral container provided free of charge by Azure. 
-Each console is provided on a per-session, per-user basis so state will only persist in storage explicitly attached for that purpose. System-wide changes will not transfe across sessions.
+The Cloud Console is a free service providing a browser accessible BASH shell. 
+This console is provided from an ephemeral container free of charge by Azure. 
+
+Each console is provided on a per-session, per-user basis so state will only persist in storage explicitly attached for that purpose. 
+System-wide changes will not transfer across sessions.
 
 ### Features
 * Browser accessible BASH shell with pre-installed Azure dev tools (submit requests for new tools in Teams discussion)
