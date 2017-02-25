@@ -44,7 +44,7 @@ Coming soon
 ## Show tagged storage account
 Coming soon
 
-## Upload/download local files
+## Upload/download files
 You can utilize the Portal GUI for Azure Files to upload or download files to/from storage.
 Editing/removing/adding files from within the console will also reflect in the File Storage GUI upon blade refresh.
 
