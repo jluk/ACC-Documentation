@@ -50,7 +50,7 @@ The Cloud Console is supported for Chrome, Firefox, Safari, IE, and Edge.
 * Force restart - TBD
 
 ## Known Preview Issues
-1. CLI 2.0 cmd and autocomplete performance
+1. CLI 2.0 cmd and autocomplete performance - fix coming
 2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
 3. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
-4. Maintaining subscription state across sessions
+4. Maintaining subscription state across sessions - fix coming

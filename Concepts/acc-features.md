@@ -23,12 +23,10 @@ Since the Cloud Console runs off of a container image, the Azure platform will m
 * vim, nano
 * npm, pip
 * git
-* Docker, emacs (coming soon)
 
 ## Language support (preview)
 * Node.js
 * Python
-* Java, Go, Ruby, PHP (coming soon)
 
 ## Authentication
 Cloud Console takes care of authentication since it is launched from your Azure Portal homepage. No additional authorization is needed to access resources from the `az cli 2.0`.
