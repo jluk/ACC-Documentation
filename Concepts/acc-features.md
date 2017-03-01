@@ -3,12 +3,15 @@ Azure Cloud Console offers a full bash shell to manage resources and develop app
 
 ## Browser-access to a BASH shell (preview)
 Azure provides you with your own Linux container running on a single-tenant F1 VM running a Debian-based Linux operating system.
-Each console is provided on a per-session, per-user basis. A console session will persist state while active and terminate after 10 minutes of 
+Each console is provided on a per-session, per-user basis. 
+
+A console session will persist state while active and terminate after 10 minutes of 
 no output activity. After this point you are not guaranteed the same container on a new request for a console.
 
 ## Persistent storage (preview)
 Since the Cloud Console is allocated on a per-session basis with an ephemeral container, files will not persist across sessions by default.
-However, you may mount your own fileshares in Azure Files storage to persist files across sessions.
+You may mount your own fileshares in Azure Files storage to persist files across sessions.
+
 This allows sharing files across teams who have access to the Azure Files account and incurs usual charges associated with Azure Files.
 Once a fileshare is associated with your console, it will be mounted on every console created for you.
 

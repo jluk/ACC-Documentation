@@ -14,9 +14,6 @@ Click the **Start Azure Cloud Console** button in the top navigation bar of the 
 
 You are now authenticated and ready to begin use.
 
-## Command line usage
-Try the Azure CLI 2.0 with 'az --version'. This will output versions of each Azure SDK installed.
-
 ### Set your subscription
 1. Check subscriptions you have access to: <br>
 `az account list`
