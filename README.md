@@ -8,7 +8,7 @@ This repo includes staged documents for the Azure Cloud Console. Please refer to
 
 ## About Cloud Console
 The Cloud Console is a free service providing a browser accessible BASH shell. 
-This console is provided from an ephemeral container free of charge by Azure. 
+This console is provided from an ephemeral container free of charge by Azure. You are a regular user on the Linux container.
 
 Each console is provided on a per-session, per-user basis so state will only persist in storage explicitly attached for that purpose. 
 System-wide changes will not transfer across sessions.
@@ -30,7 +30,8 @@ In order to receive internal access you must:
 Your initial session will take ~90 seconds to configure, subsequent sessions will be much faster.
 
 ## Console timeout
-Your console is set to timeout after 10 minutes of zero output activity. You can reactivate your console by pressing the "Enter" key after timeout.
+Your console is set to timeout after 10 minutes of zero output activity. 
+You can reactivate your console by pressing the "Enter" key after timeout.
 
 ## VM sku
 Your console is running in a Debian-based Linux container on a single-tenant F1 during preview.
@@ -39,7 +40,7 @@ Your console is running in a Debian-based Linux container on a single-tenant F1 
 This will be a free service to all Azure customers.
 
 ## Supported browsers
-The Cloud Console is supported for Chrome, Firefox, Safari, IE, and Edge.
+The Cloud Console is supported for Chrome, Firefox, Safari, IE, and Edge. Shortcut functionality will be subject to browser settings.
 
 ## Feedback
 [Internal] Please provide feedback on the Cloud Console Teams discussion.
@@ -54,3 +55,5 @@ The Cloud Console is supported for Chrome, Firefox, Safari, IE, and Edge.
 2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
 3. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
 4. Maintaining subscription state across sessions - fix coming
+5. Shortcuts (ctrl-v and ctrl-c) not supported on Windows in preview
+6. Right-click paste not supported on IE/Firefox

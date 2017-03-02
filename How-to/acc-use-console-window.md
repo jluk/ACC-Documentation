@@ -2,7 +2,7 @@
 This document explains how to use the Azure Cloud Console window.
 
 ## Copy Paste
-* Ctrl-C and Ctrl-V to copy paste
+* Cmd-C and Cmd-V to copy paste on Mac
 * Right-click to select copy or paste
 
 ## Adjusting window size
