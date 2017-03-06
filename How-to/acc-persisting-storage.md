@@ -1,10 +1,8 @@
 # Persisting storage (preview)
 The Cloud Console allows users to attach their own fileshare held in Azure Storage to maintain file persistence across console sessions. 
-During preview we allow users to bring their own storage account to mount under the user's $HOME directory as a directory named `clouddrive`. 
-Only files in this mounted directory will be persisted across sessions.
 
-**NOTE 2/13/17** 
-* Your file storage will mount as a directory within the user $HOME directory named `clouddrive`.
+* Your Azure Storage fileshare will mount as a directory within the user $HOME directory named `clouddrive` via SMB protocol.
+* Multiple users may interact with this storage account concurrently for team workflows.
 * This is under active development so expect behavior to evolve over time, please leave feedback on the Teams discussion for us to consider.
 
 ## How it works
@@ -23,7 +21,46 @@ To mount an Azure Files storage account: <br>
 ```
 createclouddrive -s mySub -g myRG -n exName -f myShare
 ```
-This will prompt you to restart the console or prompt you to create a new storage account if it does not already exist.
+If successful you will be prompted to restart the console or to create a new storage account if the storage account does not already exist.
+```
+justin@Azure:~$ createclouddrive -s borisb-internal-sub -g acc-a0 -n acca0disks656 -f myClouddrive
+INFO: Setting subscription (juluk-subscription)
+INFO: User Principal Name: juluk@microsoft.com
+INFO: Getting storage account (acca0disks656) in resource group (acc-a0)
+{
+  "accessTier": null,
+  "creationTime": "2017-03-02T19:43:03.975183+00:00",
+  "customDomain": null,
+  "encryption": null,
+  "id": "/subscriptions/ex-subscription-guid/resourceGroups/acc-a0/providers/Microsoft.Storage/storageAccounts/acca0disks656",
+  "kind": "Storage",
+  "lastGeoFailoverTime": null,
+  "location": "westus",
+  "name": "acca0disks656",
+  "primaryEndpoints": {
+    "blob": "https://acca0disks656.blob.core.windows.net/",
+    "file": "https://acca0disks656.file.core.windows.net/",
+    "queue": "https://acca0disks656.queue.core.windows.net/",
+    "table": "https://acca0disks656.table.core.windows.net/"
+  },
+  "primaryLocation": "westus",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "acc-a0",
+  "secondaryEndpoints": null,
+  "secondaryLocation": null,
+  "sku": {
+    "name": "Standard_LRS",
+    "tier": "Standard"
+  },
+  "statusOfPrimary": "available",
+  "statusOfSecondary": null,
+  "tags": {
+    "cloud-console-files-for-juluk@microsoft.com": "myClouddrive"
+  },
+  "type": "Microsoft.Storage/storageAccounts"
+}
+INFO: Provision succeeds. Please type 'exit' to restart the console.
+```
 
 You should now be able to upload/download to/from your fileshare from the `clouddrive` directory within the Cloud Console.
 Uploading/downloading from/to your local machine can be done via the Azure Files portal blades.
@@ -39,10 +76,15 @@ Options: <br>
   -? | -h | --help Shows this usage text <br>
 
 ## Unmounting a storage account
-Coming soon
+To unmount a fileshare from Cloud Console, simply delete the storage tag on the storage account.
+
+![](../media/unmount-storage.png)
 
 ## Show tagged storage account
-Coming soon
+To find details about your mounted storage run:
+```
+az resource list --tag cloud-console-files-for-user@domain.com=mountedFileshareName
+```
 
 ## Upload/download files
 You can utilize the Portal GUI for Azure Files to upload or download files to/from storage.

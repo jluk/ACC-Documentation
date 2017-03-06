@@ -7,11 +7,10 @@ This repo includes staged documents for the Azure Cloud Console. Please refer to
 * Shortlink to these docs via [aka.ms/accbetadocs] (https://www.aka.ms/accbetadocs)
 
 ## About Cloud Console
-The Cloud Console is a free service providing a browser accessible BASH shell. 
-This console is provided from an ephemeral container free of charge by Azure. You are a regular user on the Linux container.
-
-Each console is provided on a per-session, per-user basis so state will only persist in storage explicitly attached for that purpose. 
-System-wide changes will not transfer across sessions.
+The Cloud Console is a free service providing a browser accessible BASH shell. User permissions are set as a regular user.
+* Console runs on an ephemeral container provided on a per-session, per-user basis
+* Machine state and files do not persist beyond the active session 
+  * You may [mount Azure storage to persist files in the clouddrive directory](/How-to/acc-persisting-storage.md)
 
 ### Features
 * Browser accessible BASH shell with pre-installed Azure dev tools (submit requests for new tools in Teams discussion)
@@ -33,22 +32,15 @@ Your initial session will take ~90 seconds to configure, subsequent sessions wil
 Your console is set to timeout after 10 minutes of zero output activity. 
 You can reactivate your console by pressing the "Enter" key after timeout.
 
-## VM sku
-Your console is running in a Debian-based Linux container on a single-tenant F1 during preview.
-
 ## Pricing
 This will be a free service to all Azure customers.
 
 ## Supported browsers
-The Cloud Console is supported for Chrome, Firefox, Safari, IE, and Edge. Shortcut functionality will be subject to browser settings.
+The Cloud Console is recommended for Chrome, Edge, and Safari. 
+The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality will be subject to specific browser settings.
 
 ## Feedback
 [Internal] Please provide feedback on the Cloud Console Teams discussion.
-
-## Updates
-* Mounting storage - v0.1 live (run `createclouddrive` to create subdirectory found in user's HOME)
-* Tooling 2.0 - TBD
-* Force restart - TBD
 
 ## Known Preview Issues
 1. CLI 2.0 cmd and autocomplete performance - F1 compensation
