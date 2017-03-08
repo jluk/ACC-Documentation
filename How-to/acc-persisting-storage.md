@@ -1,7 +1,7 @@
 # Persisting storage (preview)
 The Cloud Console allows users to attach their own fileshare held in Azure Storage to maintain file persistence across console sessions. 
 
-* Your Azure Storage fileshare will mount as a directory within the user $HOME directory named `clouddrive` via SMB protocol.
+* Your Azure Storage fileshare will mount as a subdirectory within the user $HOME directory named `clouddrive` via SMB protocol.
 * Multiple users may interact with this storage account concurrently for team workflows.
 * This is under active development so expect behavior to evolve over time, please leave feedback on the Teams discussion for us to consider.
 
