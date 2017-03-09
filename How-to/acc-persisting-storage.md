@@ -81,9 +81,17 @@ To unmount a fileshare from Cloud Console, simply delete the storage tag on the 
 ![](../media/unmount-storage.png)
 
 ## Show tagged storage account
-To find details about your mounted storage run:
+To find details about your mounted storage run `df`. The filepath to clouddrive will show your storage account name and fileshare in the url.
 ```
-az resource list --tag cloud-console-files-for-user@domain.com=mountedFileshareName
+justin@Azure:~$ df
+Filesystem                                         1K-blocks    Used  Available Use% Mounted on
+overlay                                             29711408 5577940   24117084  19% /
+tmpfs                                                 986716       0     986716   0% /dev
+tmpfs                                                 986716       0     986716   0% /sys/fs/cgroup
+/dev/sda1                                           29711408 5577940   24117084  19% /etc/hosts
+shm                                                    65536       0      65536   0% /dev/shm
+//exporterstorage219.file.core.windows.net/tester 5368709120      64 5368709056   1% /home/justin/clouddrive
+justin@Azure:~$
 ```
 
 ## Upload/download files
