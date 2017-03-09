@@ -18,8 +18,6 @@ The console window lives along the GUI portal for easy interface swapping. You c
 ## Scrolling text display
 You can scroll the console display by: <br>
 * Scrolling with your mouse wheel like any regular website
-* Using **Ctrl-Shift-PageUp / Ctrl-Shift-PageDn** (Windows & Linux) or **Fn-Shift-Up / Fn-Shift-Down** (Mac)
 
-## Upload/download (coming soon)
-
-## Next Steps
+## Exit
+Typing `exit` in the console will deallocate your container for recycling. This occurs by default after 10 minutes of zero console output.

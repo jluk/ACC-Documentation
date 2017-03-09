@@ -1,9 +1,15 @@
 # Persisting storage (preview)
-The Cloud Console allows users to attach their own fileshare held in Azure Storage to maintain file persistence across console sessions. 
+The Cloud Console allows users to attach their own fileshare held in Azure Storage to maintain file persistence across console sessions.
+Anything stored in Azure Files is subject to regular Azure Storage pricing. [Click here for details on Azure Files prices.]((https://azure.microsoft.com/en-us/pricing/details/storage/files/))
 
-* Your Azure Storage fileshare will mount as a subdirectory within the user $HOME directory named `clouddrive` via SMB protocol.
-* Multiple users may interact with this storage account concurrently for team workflows.
-* This is under active development so expect behavior to evolve over time, please leave feedback on the Teams discussion for us to consider.
+Cloud Console file storage works in two ways: <br>
+1. File shares will mount as a `clouddrive` subdirectory in your user $HOME - use this to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files)
+2. Your user $HOME directory will persist as an .img file stored in your mounted file share (.img defaults to 5GB)
+
+This enables many use cases such as: <br>
+* Upload/download local files to/from the Cloud Console via clouddrive
+* Persisting ssh keys stored in .ssh across sessions (captured in mounted file share's .img)
+* Allowing multiple users to edit a shared file share from the Cloud Console
 
 ## How it works
 Upon choosing to mount an Azure Storage account, the Cloud Console will add a "tag" to the selected storage account using the format: <br>
@@ -75,6 +81,9 @@ Options: <br>
   -f | Fileshare name <br>
   -? | -h | --help Shows this usage text <br>
 
+## Updating a storage account
+Using the `createclouddrive` command will automatically remove the tag of the previous storage account and add it to the new storage account.
+
 ## Unmounting a storage account
 To unmount a fileshare from Cloud Console, simply delete the storage tag on the storage account.
 
@@ -82,6 +91,9 @@ To unmount a fileshare from Cloud Console, simply delete the storage tag on the 
 
 ## Show tagged storage account
 To find details about your mounted storage run `df`. The filepath to clouddrive will show your storage account name and fileshare in the url.
+
+`//storageaccountname.file.core.windows.net/filesharename`
+
 ```
 justin@Azure:~$ df
 Filesystem                                         1K-blocks    Used  Available Use% Mounted on
@@ -94,7 +106,7 @@ shm                                                    65536       0      65536 
 justin@Azure:~$
 ```
 
-## Upload/download files
+## Upload or download local files
 You can utilize the Portal GUI for Azure Files to upload or download files to/from storage.
 Editing/removing/adding files from within the console will also reflect in the File Storage GUI upon blade refresh.
 

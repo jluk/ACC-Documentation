@@ -12,7 +12,7 @@ This shell is your personal sandbox enabling you to deploy, manage, and develop 
 
 ### Concepts
 * Machine state and files do not persist beyond the active session by default
-  * You may [mount Azure storage to persist files in the clouddrive directory](/How-to/acc-persisting-storage.md) 
+  * You may [mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
 * Permissions are set as a regular user
 * Console runs on an ephemeral container provided on a per-session, per-user basis
 * Console times out after 10 minutes without output activity (Hit enter to reactivate)
@@ -53,6 +53,5 @@ The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut
 1. CLI 2.0 cmd and autocomplete performance
 2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
 3. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
-4. Maintaining subscription state across sessions - fix coming
-5. Shortcuts (ctrl-v and ctrl-c) not supported on Windows in preview
-6. Right-click paste not supported on IE/Firefox
+4. Shortcuts (ctrl-v and ctrl-c) not supported on Windows in preview
+5. Right-click paste not supported on IE/Firefox
