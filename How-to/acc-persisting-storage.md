@@ -1,10 +1,10 @@
 # Persisting storage (preview)
 The Cloud Console allows users to attach their own fileshare held in Azure Storage to maintain file persistence across console sessions.
-Anything stored in Azure Files is subject to regular Azure Storage pricing. [Click here for details on Azure Files prices.]((https://azure.microsoft.com/en-us/pricing/details/storage/files/))
+Anything stored in Azure Files is subject to regular Azure Storage pricing. [Click here for details on Azure Files prices.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 
 Cloud Console file storage works in two ways: <br>
-1. File shares will mount as a `clouddrive` subdirectory in your user $HOME - use this to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files)
-2. Your user $HOME directory will persist as an .img file stored in your mounted file share (.img defaults to 5GB)
+1. File shares will mount as a `clouddrive` subdirectory in your user $HOME - use this to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files) <br>
+2. Your user $HOME directory will persist as an .img file stored in your mounted file share (.img defaults to 5GB) <br>
 
 This enables many use cases such as: <br>
 * Upload/download local files to/from the Cloud Console via clouddrive
@@ -72,7 +72,7 @@ You should now be able to upload/download to/from your fileshare from the `cloud
 Uploading/downloading from/to your local machine can be done via the Azure Files portal blades.
 
 To see more details run `createclouddrive -h`: <br>
-
+```
 Options: <br>
   -s | Subscription ID or name <br>
   -g | Resource group name <br>
@@ -80,7 +80,7 @@ Options: <br>
   -F | Create storage account if it doesn't exist <br>
   -f | Fileshare name <br>
   -? | -h | --help Shows this usage text <br>
-
+```
 ## Updating a storage account
 Using the `createclouddrive` command will automatically remove the tag of the previous storage account and add it to the new storage account.
 
