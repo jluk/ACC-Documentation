@@ -33,21 +33,23 @@ Check the full [feature list here](Concepts/acc-features.md).
 ## Preview access 
 In order to receive internal access you must:
 
-1. Be whitelisted - this was done via a sign-up form on the blog announcement through January 10th, internals may email juluk@microsft.com to request further access. <br>
-2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link. <br>
+1. Be whitelisted
+2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link.
 3. Launch the console via the terminal icon on the top navigation pane.
 
 Your initial session will take ~90 seconds to configure, subsequent sessions will be much faster.
 
 ## Pricing
-This will be a free service to all Azure customers.
+The Cloud Console is a free service to all Azure customers. Regular storage costs apply if mounting an Azure File share.
 
 ## Supported browsers
 The Cloud Console is recommended for Chrome, Edge, and Safari. 
 The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality will be subject to specific browser settings.
 
 ## Feedback
-[Internal] Please provide feedback on the Cloud Console Teams discussion.
+[Internal] Please provide feedback on: <br>
+1. [Yammer group](https://www.yammer.com/microsoft.com/groups/azurecloudconsole)
+2. Cloud Console Teams discussion
 
 ## Known Preview Issues
 1. CLI 2.0 cmd and autocomplete performance
