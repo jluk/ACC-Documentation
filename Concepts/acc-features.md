@@ -1,25 +1,33 @@
-# Features
-Azure Cloud Console offers a full bash shell to manage resources and develop applications on Azure directly from the Azure Portal.
+---
+title: Azure Cloud Console Features | Microsoft Docs
+description: Overview of features of Azure Cloud Console
+services: 
+documentationcenter: ''
+author: jluk
+manager: timlt
+tags: azure-resource-manager
+ 
+ms.assetid: 
+ms.service: 
+ms.workload: infrastructure-services
+ms.tgt_pltfrm: vm-linux
+ms.devlang: na
+ms.topic: article
+ms.date: 03/09/2017
+ms.author: juluk
+---
 
-## Browser-access to a BASH shell (preview)
-Azure provides you with your own Linux container running on a single-tenant F1 VM running a Debian-based Linux operating system.
-Each console is provided on a per-session, per-user basis. 
+# Features (Preview)
+Azure Cloud Console offers a full Bash shell to manage resources and develop applications on Azure directly from the Azure Portal.
+Each Bash shell is housed in a container allocated to you on a per-request basis. As a result, you are not guaranteed the same container 
+on each request.
 
-A console session will persist state while active and terminate after 10 minutes of 
-no output activity. After this point you are not guaranteed the same container on a new request for a console.
+## Browser-access to a Bash shell built for Azure
+Azure provides a Bash workstation fully customized for Azure. This sandbox is provided to users as a way to manage, test, and deploy 
+Azure resources without the overhead of installing, versioning, and maintaining a system.
 
-## Persistent storage (preview)
-Since the Cloud Console is allocated on a per-session basis with an ephemeral container, files will not persist across sessions by default.
-You may mount your own fileshares in Azure Files storage to persist files across sessions.
-
-This allows sharing files across teams who have access to the Azure Files account and incurs usual charges associated with Azure Files.
-Once a fileshare is associated with your console, it will be mounted on every console created for you.
-
-To learn more visit [Attaching file storage](../How-to/acc-persisting-storage.md).
-
-## Pre-installed tools (preview)
-Since the Cloud Console runs off of a container image, the Azure platform will manage updating tools on your behalf so each session offers the latest and greatest tools.
-
+The container includes:
+### Pre-installed tools
 * bash, sh 
 * Azure CLI 1.0 and 2.0
 * less, jq
@@ -27,15 +35,22 @@ Since the Cloud Console runs off of a container image, the Azure platform will m
 * npm, pip
 * git
 
-## Language support (preview)
+### Language support
 * Node.js
 * Python
 
-## Authentication
-Cloud Console takes care of authentication since it is launched from your Azure Portal homepage. No additional authorization is needed to access resources from the `az cli 2.0`.
+## Automatic authentication
+Cloud Console immediately authenticates the Azure CLI 2.0 by repurposing the credentials used to login to Azure Portal.
+No additional authorization is needed offering single-click access, everytime.
 
-## Telemetry statistics
-The Cloud Console collects telemetry through the `az cli 2.0` about what resources are being used. No personally identifiable information such as arguments for commands are captured and as a result collected telemetry can never be tied back to individual users.
+## Bring your own storage persistence
+Since the Cloud Console is allocated on a per-session basis on an ephemeral container, files will not persist across sessions by default.
+You may mount your own fileshares in Azure Files to persist files across sessions.
+
+This enables file persistence across sessions and having a central file share to utilize with others.
+Once a fileshare is associated with your console, it will be mounted on each subsequent console on start up.
+
+To learn more visit [Attaching file storage](../How-to/acc-persisting-storage.md).
 
 ## Next steps
 [ACC Quickstart](../Get-started/acc-quickstart.md) <br>

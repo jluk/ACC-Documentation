@@ -1,3 +1,21 @@
+---
+title: Azure Cloud Console Overview | Microsoft Docs
+description: Overview of the Azure Cloud Console.
+services: 
+documentationcenter: ''
+author: jluk
+manager: timlt
+tags: azure-resource-manager
+ 
+ms.assetid: 
+ms.service: 
+ms.workload: infrastructure-services
+ms.tgt_pltfrm: vm-linux
+ms.devlang: na
+ms.topic: article
+ms.date: 03/09/2017
+ms.author: juluk
+---
 # Azure Cloud Console (preview)
 This repo includes staged documents for the Azure Cloud Console. Please refer to these documents for updates throughout previews.
 

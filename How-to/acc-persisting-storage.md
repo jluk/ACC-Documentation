@@ -1,9 +1,29 @@
+---
+title: Persisting files in Azure Cloud Console | Microsoft Docs
+description: Walkthrough of how to mount Azure file shares to the Azure Cloud Console.
+services: 
+documentationcenter: ''
+author: jluk
+manager: timlt
+tags: azure-resource-manager
+ 
+ms.assetid: 
+ms.service: 
+ms.workload: infrastructure-services
+ms.tgt_pltfrm: vm-linux
+ms.devlang: na
+ms.topic: article
+ms.date: 03/09/2017
+ms.author: juluk
+---
+
 # Persisting storage (preview)
 The Cloud Console allows users to attach their own fileshare held in Azure Storage to maintain file persistence across console sessions.
 Anything stored in Azure Files is subject to regular Azure Storage pricing. [Click here for details on Azure Files prices.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 
 Cloud Console file storage works in two ways: <br>
-1. File shares will mount as a `clouddrive` subdirectory in your user $HOME - use this to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files) <br>
+1. File shares will mount as a `clouddrive` subdirectory in your user $HOME <br>
+Use this to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files) <br>
 2. Your user $HOME directory will persist as an .img file stored in your mounted file share (.img defaults to 5GB) <br>
 
 This enables many use cases such as: <br>
