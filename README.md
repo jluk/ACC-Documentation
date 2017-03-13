@@ -66,8 +66,8 @@ The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut
 
 ## Feedback
 [Internal] Please provide feedback on: <br>
-1. [Yammer group](https://www.yammer.com/microsoft.com/groups/azurecloudconsole)
-2. Cloud Console Teams discussion
+1. [Yammer group](https://www.yammer.com/microsoft.com/groups/azurecloudconsole) <br>
+2. Cloud Console Teams discussion <br>
 
 ## Known Preview Issues
 1. CLI 2.0 cmd and autocomplete performance

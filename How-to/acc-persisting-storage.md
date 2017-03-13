@@ -21,14 +21,15 @@ ms.author: juluk
 The Cloud Console allows users to attach their own fileshare held in Azure Storage to maintain file persistence across console sessions.
 Anything stored in Azure Files is subject to regular Azure Storage pricing. [Click here for details on Azure Files prices.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 
-Cloud Console file storage works in two ways: <br>
-1. File shares will mount as a `clouddrive` subdirectory in your user $HOME <br>
-Use this to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files) <br>
-2. Your user $HOME directory will persist as an .img file stored in your mounted file share (.img defaults to 5GB) <br>
+Persisting files in Cloud Console follows this process: <br>
+1. Specify a file share to mount via `createclouddrive` command and Cloud Console will tag it
+2. Console start searches for tag and if found, mounts on /usr/userName/clouddrive
+3. Subdirectory `clouddrive` is created and supports GUI interaction to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files)
+4. A 5GB image is also created and stored in the file share to persist the user $Home directory
 
 This enables many use cases such as: <br>
 * Upload/download local files to/from the Cloud Console via clouddrive
-* Persisting ssh keys stored in .ssh across sessions (captured in mounted file share's .img)
+* Persisting ssh keys stored in your .ssh folder across sessions (captured in mounted file share's .img)
 * Allowing multiple users to edit a shared file share from the Cloud Console
 
 ## How it works
@@ -135,6 +136,11 @@ Editing/removing/adding files from within the console will also reflect in the F
 2. Select target file in Portal
 3. Hit "Download"
 ![](../media/download-storage.png)
+
+**Note** <br>
+If you need to download a local file that exists in your $Home directory:
+1. Copy it to `clouddrive` <br>
+2. Follow [previous steps](#upload-or-download-local-files) <br>
 
 ## Next steps
 [ACC Quickstart](../Get-started/acc-quickstart.md) <br>
