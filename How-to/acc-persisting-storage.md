@@ -24,8 +24,8 @@ Anything stored in Azure Files is subject to regular Azure Storage pricing. [Cli
 Persisting files in Cloud Console follows this process: <br>
 
 1. Specify a file share to mount via `createclouddrive` command and Cloud Console will tag it
-2. Console start searches for tag and if found, mounts on /usr/userName/clouddrive
-3. Subdirectory `clouddrive` is created and supports GUI interaction to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files)
+2. Console searches for tag on start and if found, mounts on /usr/userName/clouddrive
+3. User's $Home subdirectory `clouddrive` is created and supports GUI interaction to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files)
 4. A 5GB image is also created and stored in the file share to persist the user $Home directory
 
 This enables many use cases such as: <br>
