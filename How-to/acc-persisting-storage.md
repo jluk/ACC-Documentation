@@ -22,6 +22,7 @@ The Cloud Console allows users to attach their own fileshare held in Azure Stora
 Anything stored in Azure Files is subject to regular Azure Storage pricing. [Click here for details on Azure Files prices.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 
 Persisting files in Cloud Console follows this process: <br>
+
 1. Specify a file share to mount via `createclouddrive` command and Cloud Console will tag it
 2. Console start searches for tag and if found, mounts on /usr/userName/clouddrive
 3. Subdirectory `clouddrive` is created and supports GUI interaction to [upload/download to/from your local machine via Azure Portal](#upload-or-download-local-files)
