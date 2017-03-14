@@ -22,12 +22,12 @@ This repo includes staged documents for the Azure Cloud Console. Please refer to
 ![](media/beta-screenshot.png)
 
 Get started by:
-1. Access console via [aka.ms/accbeta] (https://www.aka.ms/accbeta) <br>
+1. Access console via [aka.ms/accbeta](https://www.aka.ms/accbeta) <br>
 2. Launch console from icon <br>
 ![](media/console-icon.png)
-3. Follow the [quickstart](/Get-started/acc-quickstart.md)<br>
+3. Follow the [quickstart](/Get-started/acc-quickstart.md) <br>
 
-Return to this site via [aka.ms/accbetadocs] (https://www.aka.ms/accbetadocs)
+Return to this site via [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
 ## About Cloud Console
 Azure is excited to provide a free, browser-accessible BASH shell to every Azure user from the Azure Portal. 
