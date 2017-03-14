@@ -27,7 +27,7 @@ The requirements are:
 ## Sign in
 Sign into the Azure portal with your Azure account identity, click **+ New** in the upper left corner:
 
-![screen1](../media/virtual-machines-linux-quick-create-portal/screen1.png)
+![](../media/console-icon.png)
 
 ## Start console
 Click the **Start Azure Cloud Console** button in the top navigation bar of the page.
