@@ -17,7 +17,7 @@ ms.date: 03/09/2017
 ms.author: juluk
 ---
 
-# Features (Preview)
+# Features (preview)
 Azure Cloud Console offers a full Bash shell to manage resources and develop applications on Azure directly from the Azure Portal.
 Each Bash shell is housed in a container allocated to you on a per-request basis. As a result, you are not guaranteed the same container 
 on each request.
@@ -25,6 +25,9 @@ on each request.
 ## Browser-access to a Bash shell built for Azure
 Azure provides a Bash workstation fully customized for Azure. This sandbox is provided to users as a way to manage, test, and deploy 
 Azure resources without the overhead of installing, versioning, and maintaining a system.
+* Cloud Console runs on a container provisioned on a per-request basis
+* Console terminates after 10 minutes of output inactivity
+* Console recycles after 30 additional minutes without console requests
 
 The container includes:
 ### Pre-installed tools
@@ -37,20 +40,19 @@ The container includes:
 
 ### Language support
 * Node.js
-* Python
+* Python 2.7
 
 ## Automatic authentication
 Cloud Console immediately authenticates the Azure CLI 2.0 by repurposing the credentials used to login to Azure Portal.
-No additional authorization is needed offering single-click access, everytime.
+No additional authorization is needed to achieve single-click access, everytime.
 
 ## Bring your own storage persistence
-Since the Cloud Console is allocated on a per-session basis on an ephemeral container, files will not persist across sessions by default.
-You may mount your own fileshares in Azure Files to persist files across sessions.
+Since the Cloud Console is allocated on a per-request basis on an ephemeral container, files will not persist across sessions by default.
 
-This enables file persistence across sessions and having a central file share to utilize with others.
+You may mount your own fileshares in Azure Files to persist files across sessions.
 Once a fileshare is associated with your console, it will be mounted on each subsequent console on start up.
 
-To learn more visit [Attaching file storage](../How-to/acc-persisting-storage.md).
+Click [here to learn how to attach file storage to Cloud Console](../How-to/acc-persisting-storage.md).
 
 ## Next steps
 [ACC Quickstart](../Get-started/acc-quickstart.md) <br>

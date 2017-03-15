@@ -17,7 +17,7 @@ ms.date: 03/09/2017
 ms.author: juluk
 ---
 
-# Quickstart
+# Quickstart (preview)
 This document details how to use the Azure Cloud Console in the [Azure Portal](https://portal.azure.com/).
 
 The requirements are:

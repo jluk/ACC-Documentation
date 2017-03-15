@@ -17,21 +17,22 @@ ms.date: 03/09/2017
 ms.author: juluk
 ---
 # Azure Cloud Console (preview)
-This repo includes staged documents for the Azure Cloud Console. Please refer to these documents for updates throughout previews.
+Azure is excited to provide a free, browser-accessible Bash shell to every Azure user from the Azure Portal. 
+This shell is your personal sandbox enabling you to deploy, manage, and develop Azure resources or integrate into your existing workflows.
 
+Shortlink to this documentation is at [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs).
+
+## Preview access 
+### Internals
+1. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link.
+![](media/console-icon.png)
+2. Launch the console via the terminal icon on the top navigation pane.
 ![](media/beta-screenshot.png)
 
-Get started by:
-1. Access console via [aka.ms/accbeta](https://www.aka.ms/accbeta) <br>
-2. Launch console from icon <br>
-![](media/console-icon.png)
-3. Follow the [quickstart](/Get-started/acc-quickstart.md) <br>
-
-Return to this site via [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
-
-## About Cloud Console
-Azure is excited to provide a free, browser-accessible BASH shell to every Azure user from the Azure Portal. 
-This shell is your personal sandbox enabling you to deploy, manage, and develop Azure resources or integrate into your existing workflows.
+### Azure Advisors
+1. Get whitelisted from the Advisor deck shared out (we whitelist every Wednesday during private preview)
+2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link.
+3. Launch the console via the terminal icon on the top navigation pane.
 
 ### Concepts
 * Machine state and files do not persist beyond the active session by default
@@ -53,30 +54,24 @@ Check the full [feature list here](Concepts/acc-features.md).
 * Manage resources via GUI or CLI, side-by-side
 * Test documentation scripts without leaving your browser
 
-## Preview access 
-In order to receive internal access you must:
-
-1. Be whitelisted
-2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link.
-3. Launch the console via the terminal icon on the top navigation pane.
-
-Your initial session will take ~90 seconds to configure, subsequent sessions will be much faster.
-
 ## Pricing
-The Cloud Console is a free service to all Azure customers. Regular storage costs apply if mounting an Azure File share.
+The Cloud Console is a free service to all Azure customers. Regular storage costs apply if mounting an Azure file share.
 
 ## Supported browsers
 The Cloud Console is recommended for Chrome, Edge, and Safari. 
+
 The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality will be subject to specific browser settings.
 
 ## Feedback
-[Internal] Please provide feedback on: <br>
-1. [Yammer group](https://www.yammer.com/microsoft.com/groups/azurecloudconsole) <br>
-2. Cloud Console Teams discussion <br>
+### Internals
+1. aka.ms/accfeedback <br>
+2. Cloud Console Discussion on Microsoft Teams <br>
+
+### Azure Advisors
+1. Utilize the Azure Advisors Yammer group
 
 ## Known Preview Issues
 1. CLI 2.0 cmd and autocomplete performance
-2. Force kill/restart is coming soon, if your console freezes please open an issue with repro details. Refreshing the page and relaunching the console acts as a force restart for now.
-3. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
-4. Shortcuts (ctrl-v and ctrl-c) not supported on Windows in preview
-5. Right-click paste not supported on IE/Firefox
+2. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
+3. Shortcuts (ctrl-v and ctrl-c) not supported on Windows during Preview
+4. Right-click paste not supported on IE/Firefox
