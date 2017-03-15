@@ -20,35 +20,35 @@ ms.author: juluk
 Azure is excited to provide a free, browser-accessible Bash shell to every Azure user from the Azure Portal. 
 This shell is your personal sandbox enabling you to deploy, manage, and develop Azure resources or integrate into your existing workflows.
 
-Shortlink to this documentation is at [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs).
+The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
 ## Preview access 
 ### Internals
-1. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link.
+1. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta) or ms.portal.azure.com
 ![](media/console-icon.png)
 2. Launch the console via the terminal icon on the top navigation pane.
 ![](media/beta-screenshot.png)
 
 ### Azure Advisors
 1. Get whitelisted from the Advisor deck shared out (we whitelist every Wednesday during private preview)
-2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta). This shortlink provides full Portal access so it can be used as a replacement link.
+2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta)
 3. Launch the console via the terminal icon on the top navigation pane.
 
-### Concepts
+## Concepts
 * Machine state and files do not persist beyond the active session by default
   * You may [mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
 * Permissions are set as a regular user
 * Console runs on an ephemeral container provided on a per-session, per-user basis
 * Console times out after 10 minutes without output activity (Hit enter to reactivate)
 
-### Features
+## Features
 * A browser-based BASH workstation built for Azure
 * Automatic authentication
 * Bring your own Azure Files for file persistence
 
 Check the full [feature list here](Concepts/acc-features.md).
 
-## Example use cases
+## Examples
 * Try out the new Azure CLI 2.0
 * SSH directly from the Azure Portal
 * Manage resources via GUI or CLI, side-by-side
@@ -64,7 +64,7 @@ The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut
 
 ## Feedback
 ### Internals
-1. aka.ms/accfeedback <br>
+1. [Yammer group at aka.ms/accfeedback](https://aka.ms/accfeedback) <br>
 2. Cloud Console Discussion on Microsoft Teams <br>
 
 ### Azure Advisors
