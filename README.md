@@ -36,7 +36,7 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 
 ## Concepts
 * Machine state and files do not persist beyond the active session by default
-  * You may [mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
+  * You may [mount Azure storage in to persist files.](/How-to/acc-persisting-storage.md) 
 * Permissions are set as a regular user
 * Console runs on an ephemeral container provided on a per-session, per-user basis
 * Console times out after 10 minutes without output activity (Hit enter to reactivate)

@@ -28,9 +28,11 @@ Azure Cloud Console has the following known limitations.
 The container providing your Cloud Console session is ephemeral and is recycled after your session is inactive for 30 minutes.
 * Without mounting storage all modifications will be lost
 * With mounted storage all modifications outside your `$Home` are lost
+* File shares can only be mounted from West US
 
 ## Performance
 * Cloud Console's first initiation may take up to 25 seconds, subsequent sessions should be about five seconds
+* Cloud Console is held in the West US region, latency will increase if interacting from a distant location
 * New container builds are generated often in an effort to include more tools, performance may fluctuate as this process is refined
 
 ## Browser support

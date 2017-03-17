@@ -49,7 +49,7 @@ No additional authorization is needed to achieve single-click access, everytime.
 ## Bring your own storage persistence
 Since the Cloud Console is allocated on a per-request basis on an ephemeral container, files will not persist across sessions by default.
 
-You may mount your own fileshares in Azure Files to persist files across sessions.
+You may mount your own Azure file shares in the West US region to persist files across sessions.
 Once a fileshare is associated with your console, it will be mounted on each subsequent console on start up.
 
 Click [here to learn how to attach file storage to Cloud Console](../How-to/acc-persisting-storage.md).
