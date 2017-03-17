@@ -30,7 +30,7 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 ![](media/beta-screenshot.png)
 
 ### Azure Advisors
-1. Get whitelisted from the Advisor deck shared out (we whitelist every Wednesday during private preview)
+1. Get whitelisted from the forms shared in the Advisor Yammer (steady rollout beginning end of March)
 2. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta)
 3. Launch the console via the terminal icon on the top navigation pane.
 
