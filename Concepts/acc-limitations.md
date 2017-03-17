@@ -20,6 +20,10 @@ ms.author: juluk
 # Limitations
 Azure Cloud Console has the following known limitations.
 
+## User permissions
+* Permissions are set as regular users without sudo access given the stateless nature of the feature
+* Should you see a valid need for sudo level access, please provide this feedback to the team on Yammer
+
 ## System state and persistence
 The container providing your Cloud Console session is ephemeral and is recycled after your session is inactive for 30 minutes.
 * Without mounting storage all modifications will be lost

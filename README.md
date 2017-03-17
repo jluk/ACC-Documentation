@@ -24,14 +24,14 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 
 ## Preview access 
 ### Internals
-1. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta) or ms.portal.azure.com
+1. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta) or rc.portal.azure.com
 ![](media/console-icon.png)
 2. Launch the console via the terminal icon on the top navigation pane.
 ![](media/beta-screenshot.png)
 
 ### Azure Advisors
 1. Get whitelisted from the Advisor deck shared out (we whitelist every Wednesday during private preview)
-2. Navigate to [aka.ms/accbeta] (https://www.aka.ms/accbeta)
+2. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta)
 3. Launch the console via the terminal icon on the top navigation pane.
 
 ## Concepts
