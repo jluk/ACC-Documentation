@@ -36,11 +36,14 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 ## Preview FAQ
 * What is it?
   * Azure Cloud Console is a browser-accessible command-line environment to manage Azure resources
-* Are files persisted?
-  * Consoles are delivered on a per-request basis, **machine or file state will not persist by default**
-  * Persist your **user $Home directory** by mounting an Azure file share via `createclouddrive -h`
-    * Cloud Console will automatically mount the same file share on subsequent sessions
-    * [Learn more about how to mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
+* How do I persist files?
+  * Persist your entire **user $Home directory** by mounting an Azure file share via `createclouddrive -h`.
+    * This only needs to be done once as Cloud Console will automatically mount the same share on subsequent sessions
+    * `createclouddrive` will also create a `clouddrive` subdirectory for file share syncing
+    * [Learn more about mounting Azure storage to persist files](/How-to/acc-persisting-storage.md) 
+* How do I upload/download from local machine to Cloud Console?
+  * The Azure Files Portal GUI syncs to the `clouddrive` subdirectory and can be interacted via Azure Portal
+  * Follow [step-by-step upload/download instructions here](https://github.com/jluk/ACC-Documentation/blob/master/How-to/acc-persisting-storage.md#upload-or-download-local-files)
 * What does it cost?
   * Cloud Console is free, mounting storage incurs regular Azure Storage charges
 * What tools are installed on the console?
