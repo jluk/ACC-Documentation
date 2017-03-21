@@ -18,7 +18,7 @@ ms.author: juluk
 ---
 # Azure Cloud Console (preview)
 Azure is excited to provide a free, browser-accessible console to every Azure user from the Azure Portal. 
-This shell is your personal sandbox enabling you to deploy, manage, and develop Azure resources or integrate into your existing workflows.
+This console is your personal sandbox enabling you to deploy, manage, and develop Azure resources or integrate into your existing workflows.
 
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
@@ -39,7 +39,8 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 * Are files persisted?
   * Consoles are delivered on a per-request basis, **machine or file state will not persist by default**
   * Persist your **user $Home directory** by mounting an Azure file share via `createclouddrive -h`
-  * [Learn more about how to mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
+    * Cloud Console will automatically mount the same file share on subsequent sessions
+    * [Learn more about how to mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
 * What does it cost?
   * Cloud Console is free, mounting storage incurs regular Azure Storage charges
 * What tools are installed on the console?
@@ -48,7 +49,7 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
   * Currently Windows only supports right-click copy pasting in Chrome and Edge
   * OS X supports cmd-v and cmd-c across all browsers
 * Do I have sudo permissions?
-  * Sudo permissions are not supported today given the stateless machine nature
+  * Sudo permissions are not supported today
 
 ## Concepts
 * Machine state and files do not persist beyond the active session by default

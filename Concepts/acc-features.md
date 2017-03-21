@@ -29,7 +29,6 @@ Azure resources without the overhead of installing, versioning, and maintaining 
 * Console terminates after 10 minutes of output inactivity
 * Console recycles after 30 additional minutes without console requests
 
-The container includes:
 ### Tools
 * bash, sh 
 * Azure CLI 1.0 and 2.0
