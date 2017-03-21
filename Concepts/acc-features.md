@@ -30,7 +30,7 @@ Azure resources without the overhead of installing, versioning, and maintaining 
 * Console recycles after 30 additional minutes without console requests
 
 The container includes:
-### Pre-installed tools
+### Tools
 * bash, sh 
 * Azure CLI 1.0 and 2.0
 * less, jq

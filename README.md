@@ -17,26 +17,42 @@ ms.date: 03/09/2017
 ms.author: juluk
 ---
 # Azure Cloud Console (preview)
-Azure is excited to provide a free, browser-accessible Bash shell to every Azure user from the Azure Portal. 
+Azure is excited to provide a free, browser-accessible console to every Azure user from the Azure Portal. 
 This shell is your personal sandbox enabling you to deploy, manage, and develop Azure resources or integrate into your existing workflows.
 
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
 ## Preview access 
 ### Internals
-1. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta) or rc.portal.azure.com
-![](media/console-icon.png)
+1. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta) or ms.portal.azure.com
 2. Launch the console via the terminal icon on the top navigation pane.
-![](media/beta-screenshot.png)
+![](media/console-icon.png)
 
 ### Azure Advisors
 1. Get whitelisted from the forms shared in the Advisor Yammer (steady rollout beginning end of March)
 2. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta)
 3. Launch the console via the terminal icon on the top navigation pane.
 
+## Preview FAQ
+* What is it?
+  * Azure Cloud Console is a browser-accessible command-line environment to manage Azure resources
+* Are files persisted?
+  * Consoles are delivered on a per-request basis, **machine or file state will not persist by default**
+  * Persist your **user $Home directory** by mounting an Azure file share via `createclouddrive -h`
+  * [Learn more about how to mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
+* What does it cost?
+  * Cloud Console is free, mounting storage incurs regular Azure Storage charges
+* What tools are installed on the console?
+  * Check the full [feature list here](Concepts/acc-features.md)
+* How do I copy and paste?
+  * Currently Windows only supports right-click copy pasting in Chrome and Edge
+  * OS X supports cmd-v and cmd-c across all browsers
+* Do I have sudo permissions?
+  * Sudo permissions are not supported today given the stateless machine nature
+
 ## Concepts
 * Machine state and files do not persist beyond the active session by default
-  * You may [mount Azure storage in to persist files.](/How-to/acc-persisting-storage.md) 
+  * You may [mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
 * Permissions are set as a regular user
 * Console runs on an ephemeral container provided on a per-session, per-user basis
 * Console times out after 10 minutes without output activity (Hit enter to reactivate)
@@ -72,6 +88,6 @@ The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut
 
 ## Known Preview Issues
 1. CLI 2.0 cmd and autocomplete performance
-2. Portal tabs left inactive for long periods of time will have tokens expire, this can disable reactivating the console. Please refresh your page to fix this.
-3. Shortcuts (ctrl-v and ctrl-c) not supported on Windows during Preview
-4. Right-click paste not supported on IE/Firefox
+2. Shortcuts (ctrl-v and ctrl-c) not supported on Windows during Preview
+3. Right-click paste not supported on IE/Firefox
+4. Handling of non-ascii usernames
