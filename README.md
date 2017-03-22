@@ -13,7 +13,7 @@ ms.workload: infrastructure-services
 ms.tgt_pltfrm: vm-linux
 ms.devlang: na
 ms.topic: article
-ms.date: 03/09/2017
+ms.date: 03/22/2017
 ms.author: juluk
 ---
 # Azure Cloud Console (preview)
@@ -36,11 +36,12 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 ## Preview FAQ
 * What is it?
   * Azure Cloud Console is a browser-accessible command-line environment to manage Azure resources
-* How do I persist files?
-  * Persist your entire **user $Home directory** by mounting an Azure file share via `createclouddrive -h`.
-    * This only needs to be done once as Cloud Console will automatically mount the same share on subsequent sessions
-    * `createclouddrive` will also create a `clouddrive` subdirectory for file share syncing
-    * [Learn more about mounting Azure storage to persist files](/How-to/acc-persisting-storage.md) 
+* How do I persist files across sessions?
+  * Mount an Azure file share via `createclouddrive -h` to receive 2 areas of persistence:
+    1. Entirety of your $Home directory will persist as a 5GB image placed in the specified file share
+    2. A `clouddrive` subdirectory under your $Home will sync to the file share for individual file interaction
+  * This only needs to be done once as Cloud Console will automatically mount the same share on subsequent sessions
+  * [Learn more about mounting Azure storage to persist files](/How-to/acc-persisting-storage.md) 
 * How do I upload/download from local machine to Cloud Console?
   * The Azure Files Portal GUI syncs to the `clouddrive` subdirectory and can be interacted via Azure Portal
   * Follow [step-by-step upload/download instructions here](https://github.com/jluk/ACC-Documentation/blob/master/How-to/acc-persisting-storage.md#upload-or-download-local-files)
