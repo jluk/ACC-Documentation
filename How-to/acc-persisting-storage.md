@@ -119,9 +119,9 @@ Options: <br>
 ```
 ## Unmounting a file share
 To unmount a fileshare from Cloud Console:
-1. Delete the storage tag on the storage account.
+1. Delete the storage tag on the storage account <br>
 ![](../media/unmount-storage.png)
-2. Recycle your Cloud Console
+2. Recycle your Cloud Console <br>
 ![](../media/recycle-icon.png)
 
 Your Cloud Console should now be cleared of any mounted shares and open to mount another.

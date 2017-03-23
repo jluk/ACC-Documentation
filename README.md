@@ -38,9 +38,8 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
   * Mount an Azure file share via `createclouddrive -h` to receive 2 methods of persistence:
     1. Entirety of your $Home directory will persist as a 5GB image placed in the specified file share
     2. A `clouddrive` subdirectory under your $Home will sync to the file share for individual file interaction
-  * This only needs to be done once as Cloud Console will automatically mount the same share on subsequent sessions
-  * Your Azure profile will be saved within your $Home image and reused on subsequent sessions
-  * Learn more about how this works at [Persist Files in Cloud Console](/How-to/acc-persisting-storage.md) 
+  * Cloud Console will automatically mount the same share on subsequent sessions
+  * Learn more about benefits and how this works at [Persist Files in Cloud Console](/How-to/acc-persisting-storage.md) 
 
 * [How do I upload/download from local machine to Cloud Console?](https://github.com/jluk/ACC-Documentation/blob/master/How-to/acc-persisting-storage.md#upload-or-download-local-files)
   * The Azure Files Portal GUI syncs to the `clouddrive` subdirectory and can be interacted via Azure Portal
