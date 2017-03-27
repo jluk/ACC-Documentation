@@ -99,4 +99,3 @@ The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut
 1. CLI 2.0 cmd and autocomplete performance
 2. Shortcuts (ctrl-v and ctrl-c) not supported on Windows during Preview
 3. Right-click paste not supported on IE/Firefox
-4. Handling of non-ascii usernames

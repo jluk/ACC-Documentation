@@ -13,7 +13,7 @@ ms.workload: infrastructure-services
 ms.tgt_pltfrm: vm-linux
 ms.devlang: na
 ms.topic: article
-ms.date: 03/09/2017
+ms.date: 03/23/2017
 ms.author: juluk
 ---
 
@@ -22,17 +22,17 @@ Azure Cloud Console has the following known limitations.
 
 ## User permissions
 * Permissions are set as regular users without sudo access given the stateless nature of the feature
-* Should you see a valid need for sudo level access, please provide this feedback to the team on Yammer
+  * Should you see a valid need for sudo level access, please provide this feedback to the team on Yammer
+* `git clone` operations are not permitted inside `clouddrive` however cloning directly into $Home will persist it within the 5gb img 
 
 ## System state and persistence
 The container providing your Cloud Console session is ephemeral and is recycled after your session is inactive for 30 minutes.
 * Without mounting storage all modifications will be lost
-* With mounted storage all modifications outside your `$Home` are lost
-* File shares can only be mounted from West US
+* With mounted storage all modifications **outside your `$Home`** are lost
+  * File shares can only be mounted from West US
 
 ## Performance
-* Cloud Console's first initiation may take up to 25 seconds, subsequent sessions should be about five seconds
-* Cloud Console is held in the West US region, latency will increase if interacting from a distant location
+* Cloud Consoles are held in the West US region, latency will increase if interacting from a distant location
 * New container builds are generated often in an effort to include more tools, performance may fluctuate as this process is refined
 
 ## Browser support
