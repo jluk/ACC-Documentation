@@ -29,7 +29,6 @@ Azure resources without the overhead of installing, versioning, and maintaining 
 * Console terminates after 10 minutes of output inactivity
 * Console recycles after 30 additional minutes without console requests
 
-
 ### Tools
 |Category   |Name   |
 |---|---|

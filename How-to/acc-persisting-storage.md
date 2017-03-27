@@ -39,9 +39,8 @@ Azure Files currently only supports LRS and GRS storage accounts. Storage is sub
 **NOTE** During private preview only file shares in West US may be mounted.
 ## Quick command
 1. Open Cloud Console
-2. Check the correct subscription is set with `az account show`
-3. Create a storage account with LRS or GRS data redundancy
-4. Run `createclouddrive` specifying an existing file share (add `-F` if file share does not exist):
+2. Find or [create a storage account with LRS or GRS data redundancy](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account)
+3. Run `createclouddrive` specifying an existing file share (add `-F` if file share does not exist):
 ```
 createclouddrive -s mySub -g myRG -n storageAccountName -f fileShareName
 ```
