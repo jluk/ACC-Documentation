@@ -29,17 +29,25 @@ Azure resources without the overhead of installing, versioning, and maintaining 
 * Console terminates after 10 minutes of output inactivity
 * Console recycles after 30 additional minutes without console requests
 
+
 ### Tools
-* bash, sh 
-* Azure CLI 1.0 and 2.0
-* less, jq
-* vim, nano
-* npm, pip
-* git
+|Category   |Name   |
+|---|---|
+|Linux shell interpreter|Bash, sh               |
+|Azure tools            |Azure CLI 2.0, 1.0     |
+|Text editors           |vim, nano, emacs       |
+|Source control         |git                    |
+|Build tools            |make, npm, pip         |
+|Containers             |Kubectl                |
+|Other                  |MySQL Client           |
 
 ### Language support
-* Node.js
-* Python 2.7
+|Language   |Version   |
+|---|---|
+|Python     |2.7 and 3.5|
+|Node.js    |6.9.4      |
+|.NET       |1.01       |
+|Go         |1.7        |
 
 ## Automatic authentication
 Cloud Console immediately authenticates the Azure CLI 2.0 by repurposing the credentials used to login to Azure Portal.

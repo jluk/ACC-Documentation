@@ -30,6 +30,7 @@ The container providing your Cloud Console session is ephemeral and is recycled 
 * Without mounting storage all modifications will be lost
 * With mounted storage all modifications **outside your `$Home`** are lost
   * File shares can only be mounted from West US
+  * Azure Files only supports LRS and GRS storage accounts
 
 ## Performance
 * Cloud Consoles are held in the West US region, latency will increase if interacting from a distant location
