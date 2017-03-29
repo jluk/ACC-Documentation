@@ -23,7 +23,6 @@ By running `createclouddrive` Cloud Console allows users to mount their own file
 This is a one-time action as the file share will be mounted on every subsequent Cloud Console session. It is highly recommended to mount a file share to enable use cases such as
 * Remember default subscription settings for Azure CLI across Cloud Console sessions
 * Upload/download local files to/from the Cloud Console via `clouddrive`
-* Persist ssh keys stored in $Home/user/.ssh across sessions (captured in mounted file share's .img)
 
 When running `createcloudddrive` Cloud Console will persist files in two ways:
 1. Persist all files in your `$Home` directory as a 5GB image in the specified file share and sync changes automatically <br>
@@ -36,11 +35,12 @@ When running `createcloudddrive` Cloud Console will persist files in two ways:
 ```
 Azure Files currently only supports LRS and GRS storage accounts. Storage is subject to [regular Azure Files pricing.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 
-**NOTE** During private preview only file shares in West US may be mounted.
+**NOTE** During private preview, only file shares in West US may be mounted.
 ## Quick command
 1. Open Cloud Console
-2. Find or [create a storage account with LRS or GRS data redundancy](https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account)
-3. Run `createclouddrive` specifying an existing file share (add `-F` if file share does not exist):
+2. Find or create a Resource Group to hold your storage account (RG must exist for createclouddrive to succeed)
+(https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account)
+3. Run `createclouddrive` specifying all options (add `-F` if file share or storage account does not exist):
 ```
 createclouddrive -s mySub -g myRG -n storageAccountName -f fileShareName
 ```

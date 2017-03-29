@@ -17,8 +17,8 @@ ms.date: 03/22/2017
 ms.author: juluk
 ---
 # Azure Cloud Console (preview)
-Azure is excited to provide a free, browser-accessible console to every Azure user from the Azure Portal. 
-This console is your personal sandbox enabling you to deploy, manage, and develop Azure resources or integrate into your existing workflows.
+Azure Cloud Console is your Azure-curated admin machine. 
+This console is your personal sandbox enabling you to deploy, manage, and develop Azure resources directly from the browser.
 
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
@@ -59,12 +59,12 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
   * OS X supports cmd-v and cmd-c across all browsers
 
 ## Concepts
-* Consoles are assigned by unique user IDs so your Azure account is the only one with access to your Cloud Console
 * Machine state and files do not persist beyond the active session by default
   * You may [mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
+* Consoles are assigned by unique user IDs so your Azure account is the only one with access to your Cloud Console
 * Permissions are set as a regular user
-* Console runs on an ephemeral container provided on a per-session, per-user basis
-* Console times out after 10 minutes without output activity (Hit enter to reactivate)
+* Console runs on an ephemeral machine provided on a per-session, per-user basis
+* Console times out after 10 minutes without output activity
 
 ## Features
 * A browser-based BASH workstation built for Azure
