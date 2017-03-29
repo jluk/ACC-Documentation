@@ -38,11 +38,19 @@ Azure Files currently only supports LRS and GRS storage accounts. Storage is sub
 **NOTE** During private preview, only file shares in West US may be mounted.
 ## Quick command
 1. Open Cloud Console
-2. Find or create a Resource Group to hold your storage account (RG must exist for createclouddrive to succeed)
-(https://docs.microsoft.com/en-us/azure/storage/storage-create-storage-account#create-a-storage-account)
-3. Run `createclouddrive` specifying all options (add `-F` if file share or storage account does not exist):
+2. Find or create a Resource Group to hold your storage account if it does not exist. **NOTE: The resource group must exist for createclouddrive to succeed.**
 ```
-createclouddrive -s mySub -g myRG -n storageAccountName -f fileShareName
+## create a new resource group from Azure CLI 2.0
+az group create --location LOCATION
+                --name NAME
+                [--tags TAGS]
+```
+3. Run `createclouddrive` specifying a new or existing file share (add `-F` if file share or storage account does not exist):
+```
+createclouddrive --subscription mySubscription
+                 --resource-group myRG
+                 --storage-account storageAccountName
+                 --file-share fileShareName
 ```
 Cloud Console will now mount this file share on every console start-up.
 
@@ -63,7 +71,7 @@ To mount an Azure Files storage account: <br>
 1. Open a Cloud Console session <br>
 2. Run: <br>
 ```
-createclouddrive -s mySub -g myRG -n storageAccountName -f fileShareName
+createclouddrive -s mySubscription -g myRG -n storageAccountName -f fileShareName
 ```
 If successful you will be prompted to restart the console or to create a new storage account if the storage account does not already exist.
 ```
