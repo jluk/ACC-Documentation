@@ -17,8 +17,8 @@ ms.date: 03/22/2017
 ms.author: juluk
 ---
 # Azure Cloud Console (preview)
-Azure Cloud Console is your Azure-curated admin machine. 
-This console is your personal sandbox enabling you to deploy, manage, and develop Azure resources directly from the browser.
+Azure Cloud Console is an interactive, browser-based command-line interface for managing Azure resources. 
+This console is your personal sandbox to deploy, manage, and develop Azure resources directly from a browser.
 
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
