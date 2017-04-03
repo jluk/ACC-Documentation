@@ -23,15 +23,15 @@ This console is your personal sandbox enabling you to deploy, manage, and develo
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
 ## Preview access 
-### Internals
-1. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta) or ms.portal.azure.com
-2. Launch the console via the terminal icon on the top navigation pane.
-![](media/console-icon.png)
-
 ### Azure Advisors
 1. Get whitelisted from the forms shared in the Advisor Yammer (steady rollout beginning end of March)
 2. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta)
 3. Launch the console via the terminal icon on the top navigation pane.
+
+### Internals
+1. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta) or ms.portal.azure.com
+2. Launch the console via the terminal icon on the top navigation pane.
+![](media/console-icon.png)
 
 ## Preview FAQ
 * [How do I persist files across sessions?](/How-to/acc-persisting-storage.md) 
@@ -88,12 +88,12 @@ The Cloud Console is recommended for Chrome, Edge, and Safari.
 The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality will be subject to specific browser settings.
 
 ## Feedback
-### Internals
-1. [Yammer group at aka.ms/accfeedback](https://aka.ms/accfeedback) <br>
-2. Cloud Console Discussion on Microsoft Teams <br>
-
 ### Azure Advisors
-1. Utilize the Azure Advisors Yammer group
+1. [Advisor Yammer @ aka.ms/accadvisorfeedback](https://aka.ms/accadvisorfeedback) <br>
+
+### Internals
+1. [Internal Yammer @ aka.ms/accfeedback](https://aka.ms/accfeedback) <br>
+2. Cloud Console Discussion on Microsoft Teams <br>
 
 ## Known Preview Issues
 1. CLI 2.0 cmd and autocomplete performance
