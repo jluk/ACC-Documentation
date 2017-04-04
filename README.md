@@ -17,8 +17,7 @@ ms.date: 03/22/2017
 ms.author: juluk
 ---
 # Azure Cloud Console (preview)
-Azure Cloud Console is an interactive, browser-based command-line interface for managing Azure resources. 
-This console is your personal sandbox to deploy, manage, and develop Azure resources directly from a browser.
+Azure Cloud Console is an interactive, browser-based command-line interface for managing Azure resources.
 
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
@@ -27,11 +26,11 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 1. Get whitelisted from the forms shared in the Advisor Yammer (steady rollout beginning end of March)
 2. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta)
 3. Launch the console via the terminal icon on the top navigation pane.
+![](media/console-icon.png)
 
 ### Internals
 1. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta) or ms.portal.azure.com
 2. Launch the console via the terminal icon on the top navigation pane.
-![](media/console-icon.png)
 
 ## Preview FAQ
 * [How do I persist files across sessions?](/How-to/acc-persisting-storage.md) 
@@ -75,9 +74,8 @@ Check the full [feature list here](Concepts/acc-features.md).
 
 ## Examples
 * Try out the new Azure CLI 2.0
-* SSH directly from the Azure Portal
 * Manage resources via GUI or CLI, side-by-side
-* Test documentation scripts without leaving your browser
+* Run scripts on Azure resources without leaving your browser
 
 ## Pricing
 The Cloud Console is a free service to all Azure customers. Regular storage costs apply if mounting an Azure file share.

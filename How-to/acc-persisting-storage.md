@@ -18,13 +18,13 @@ ms.author: juluk
 ---
 
 # Persisting storage (preview)
-By running `createclouddrive` Cloud Console allows users to mount their own fileshare held in Azure Storage to maintain file persistence across console sessions. 
+By running `createclouddrive` Cloud Console tags an Azure file share to mount and persist files across console sessions. 
 
-This is a one-time action as the file share will be mounted on every subsequent Cloud Console session. It is highly recommended to mount a file share to enable use cases such as
-* Remember default subscription settings for Azure CLI across Cloud Console sessions
-* Upload/download local files to/from the Cloud Console via `clouddrive`
+This is a one-time action as the file share will be mounted on every subsequent Cloud Console session. It is highly recommended to mount a file share to enable uses such as
+* Remembering default subscription settings for Azure CLI 2.0 across console sessions
+* Uploading/downloading local files to/from the Cloud Console via the `clouddrive` subdirectory
 
-When running `createcloudddrive` Cloud Console will persist files in two ways:
+When running `createcloudddrive`, Cloud Console will persist files in two ways:
 1. Persist all files in your `$Home` directory as a 5GB image in the specified file share and sync changes automatically <br>
 ```
 /Home/<User> -----> fileshare.storage.windows.net/fileshare/.cloudconsole/user.img
@@ -33,12 +33,18 @@ When running `createcloudddrive` Cloud Console will persist files in two ways:
 ```
 /Home/<User>/clouddrive -----> fileshare.storage.windows.net/fileshare
 ```
-Azure Files currently only supports LRS and GRS storage accounts. Storage is subject to [regular Azure Files pricing.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 
-**NOTE** During private preview, only file shares in West US may be mounted.
+## Pre-Requisites
+1. Azure Storage Account type must be LRS or GRS to support file shares. Storage is subject to [regular Azure Files pricing.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
+2. Azure Storage Account must be located in one of the below regions to be mounted to Cloud Console:
+
+|Region|
+|---|
+|West US|
+
 ## Quick command
 1. Open Cloud Console
-2. Find or create a Resource Group to hold your storage account if it does not exist. **NOTE: The resource group must exist for createclouddrive to succeed.**
+2. Find or create a Resource Group to hold your storage account. **NOTE: The resource group must exist for `createclouddrive` to succeed.**
 ```
 ## create a new resource group from Azure CLI 2.0
 az group create --location LOCATION
@@ -153,7 +159,7 @@ tmpfs                                                 986716       0     986716 
 tmpfs                                                 986716       0     986716   0% /sys/fs/cgroup
 /dev/sda1                                           29711408 5577940   24117084  19% /etc/hosts
 shm                                                    65536       0      65536   0% /dev/shm
-//exporterstorage219.file.core.windows.net/tester 5368709120      64 5368709056   1% /home/justin/clouddrive
+//storageName.file.core.windows.net/fileshareName 5368709120      64 5368709056   1% /home/justin/clouddrive
 justin@Azure:~$
 ```
 
