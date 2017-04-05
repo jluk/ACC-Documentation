@@ -37,8 +37,9 @@ Azure resources without the overhead of installing, versioning, and maintaining 
 |Text editors           |vim, nano, emacs       |
 |Source control         |git                    |
 |Build tools            |make, npm, pip         |
-|Containers             |Kubectl                |
-|Other                  |MySQL Client           |
+|Containers             |Kubectl, DC/OS CLI         |
+|Databases              |MySQL Client, PostgreSql Client, sqlcmd Utility      |
+|Other                  |iPython Client |
 
 ### Language support
 |Language   |Version   |
