@@ -27,18 +27,18 @@ Azure provides a Bash workstation fully customized for Azure. This sandbox is pr
 Azure resources without the overhead of installing, versioning, and maintaining a system.
 * Cloud Console runs on a container provisioned on a per-request basis
 * Console terminates after 10 minutes of output inactivity
-* Console recycles after 30 additional minutes without console requests
+* Console recycles after 30 additional minutes without console requests erasing machine state
 
 ### Tools
 |Category   |Name   |
 |---|---|
-|Linux shell interpreter|Bash, sh               |
-|Azure tools            |Azure CLI 2.0, 1.0     |
-|Text editors           |vim, nano, emacs       |
+|Linux shell interpreter|Bash<br> sh               |
+|Azure tools            |Azure CLI 2.0 and 1.0     |
+|Text editors           |vim<br> nano<br> emacs       |
 |Source control         |git                    |
-|Build tools            |make, npm, pip         |
-|Containers             |Kubectl, DC/OS CLI         |
-|Databases              |MySQL Client, PostgreSql Client, sqlcmd Utility      |
+|Build tools            |make<br> maven<br> npm<br> pip         |
+|Containers             |Kubectl<br> DC/OS CLI         |
+|Databases              |MySQL Client<br> PostgreSql Client<br> sqlcmd Utility      |
 |Other                  |iPython Client |
 
 ### Language support
