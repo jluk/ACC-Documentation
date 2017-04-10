@@ -18,9 +18,7 @@ ms.author: juluk
 ---
 
 # Pricing
-
-## Compute
-The container your console is using is free.
+Azure Cloud Console is provided for free. Any accessory Azure resources incur regular costs.
 
 ## Storage
 Attaching persistent storage via `createclouddrive` incurs regular storage costs. This includes any files and the default 5GB image used to persist your $HOME directory.

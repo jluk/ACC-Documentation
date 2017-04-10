@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Console Limitations | Microsoft Docs
+title: Azure Cloud Console (Preview) Limitations | Microsoft Docs
 description: Overview of limitations of Azure Cloud Console
 services: 
 documentationcenter: ''
@@ -23,18 +23,18 @@ Azure Cloud Console has the following known limitations.
 ## User permissions
 * Permissions are set as regular users without sudo access given the stateless nature of the feature
   * Should you see a valid need for sudo level access, please provide this feedback to the team on Yammer
-* `git clone` operations are not permitted inside `clouddrive` however cloning directly into $Home will persist it within the 5gb img 
+* `git clone` operations are not permitted inside `clouddrive` however cloning directly into $Home persists files within the 5gb img 
 
 ## System state and persistence
 The container providing your Cloud Console session is ephemeral and is recycled after your session is inactive for 30 minutes.
 * Without mounting storage all modifications will be lost
-* With mounted storage all modifications **outside your `$Home`** are lost
+* With mounted storage all modifications outside your `$Home` are lost
   * File shares can only be mounted from West US
   * Azure Files only supports LRS and GRS storage accounts
 
 ## Performance
-* Cloud Consoles are held in the West US region, latency will increase if interacting from a distant location
-* New container builds are generated often in an effort to include more tools, performance may fluctuate as this process is refined
+* Cloud Consoles are held in West US and latency increases if interacting from a distant location
+* New container builds are generated often to include more tools, performance may fluctuate as this process is refined
 
 ## Browser support
 * Cloud Console supports the latest versions of Microsoft Edge, Microsoft Internet Explorer, Google Chrome, Mozilla Firefox, and Apple Safari
@@ -43,11 +43,11 @@ The container providing your Cloud Console session is ephemeral and is recycled 
 * Firefox and Internet Explorer do not support right-click paste
 
 ## Usage limits
-* Cloud Console is intended for interactive use cases, as a result any long-running non-interactive sessions will be ended automatically. Extreme prolonged usage will cause session termination without warning.
+* Cloud Console is intended for interactive use cases, as a result any long-running non-interactive sessions are ended without warning.
 
 ## Network connectivity
 * Any latency in the Cloud Console is subject to local internet connectivity, Cloud Console will continue to attempt functioning to any instructions sent.
 
 ## Next steps
 [ACC Quickstart](../Get-started/acc-quickstart.md) <br>
-[Mount storage to Cloud Console to persist files](/How-to/acc-persisting-storage.md) 
+[Persist files by attaching a file share to Cloud Console](/How-to/acc-persisting-storage.md) 

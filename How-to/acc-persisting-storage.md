@@ -1,5 +1,5 @@
 ---
-title: Persisting files in Azure Cloud Console | Microsoft Docs
+title: Persisting files in Azure Cloud Console (Preview) | Microsoft Docs
 description: Walkthrough of how to mount Azure file shares to the Azure Cloud Console.
 services: 
 documentationcenter: ''
@@ -13,7 +13,7 @@ ms.workload: infrastructure-services
 ms.tgt_pltfrm: vm-linux
 ms.devlang: na
 ms.topic: article
-ms.date: 03/23/2017
+ms.date: 04/10/2017
 ms.author: juluk
 ---
 
@@ -46,7 +46,7 @@ When running `createcloudddrive`, Cloud Console will persist files in two ways:
 1. Open Cloud Console
 2. Find or create a Resource Group to hold your storage account. **NOTE: The resource group must exist for `createclouddrive` to succeed.**
 ```
-## create a new resource group from Azure CLI 2.0
+## create a resource group from Azure CLI 2.0
 az group create --location LOCATION
                 --name NAME
                 [--tags TAGS]

@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Console Overview | Microsoft Docs
+title: Azure Cloud Console (Preview) Overview | Microsoft Docs
 description: Overview of the Azure Cloud Console.
 services: 
 documentationcenter: ''
@@ -41,7 +41,7 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
   * Learn how this works at [Persist Files in Cloud Console](/How-to/acc-persisting-storage.md) 
 
 * [How do I upload/download from local machine to Cloud Console?](https://github.com/jluk/ACC-Documentation/blob/master/How-to/acc-persisting-storage.md#upload-or-download-local-files)
-  * The Azure Files Portal GUI syncs to the `clouddrive` subdirectory and can be interacted via Azure Portal
+  * The Azure Files portal GUI syncs to the `clouddrive` subdirectory and can be interacted via Azure portal
   * Follow [step-by-step upload/download instructions here](https://github.com/jluk/ACC-Documentation/blob/master/How-to/acc-persisting-storage.md#upload-or-download-local-files)
 
 * [What does it cost?](Concepts/acc-pricing.md)
@@ -86,7 +86,7 @@ The Cloud Console is a free service to all Azure customers. Regular storage cost
 ## Supported browsers
 The Cloud Console is recommended for Chrome, Edge, and Safari. 
 
-The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality will be subject to specific browser settings.
+The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality is subject to specific browser settings.
 
 For all limitations visit [limitations of Cloud Console](Concepts/acc-limitations.md).
 ## Feedback
