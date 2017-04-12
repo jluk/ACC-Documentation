@@ -57,8 +57,8 @@ Since the Cloud Console is allocated on a per-request basis on a temporary conta
 To persist files across sessions, mount an Azure file share in West US.
 Once a fileshare is associated with your console, it will be mounted on each subsequent console on start-up.
 
-[Learn how to attach Azure file shares to Cloud Console.](../How-to/acc-persisting-storage.md).
+[Learn how to attach Azure file shares to Cloud Console.](acc-persisting-storage.md).
 
 ## Next steps
-[ACC Quickstart](../Get-started/acc-quickstart.md) <br>
+[ACC Quickstart](acc-quickstart.md) <br>
 [Azure CLI 2.0 documentation](https://docs.microsoft.com/en-us/cli/azure/) <br>

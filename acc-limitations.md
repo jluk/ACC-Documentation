@@ -49,5 +49,5 @@ The container providing your Cloud Console session is ephemeral and is recycled 
 * Any latency in the Cloud Console is subject to local internet connectivity, Cloud Console will continue to attempt functioning to any instructions sent.
 
 ## Next steps
-[ACC Quickstart](../Get-started/acc-quickstart.md) <br>
+[ACC Quickstart](acc-quickstart.md) <br>
 [Persist files by attaching a file share to Cloud Console](/How-to/acc-persisting-storage.md) 

@@ -33,33 +33,33 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 2. Launch the console via the terminal icon on the top navigation pane.
 
 ## Preview FAQ
-* [How do I persist files across sessions?](/How-to/acc-persisting-storage.md) 
+* [How do I persist files across sessions?](acc-persisting-storage.md) 
   * Mount an Azure file share via `createclouddrive -h` to receive 2 methods of persistence:
     1. Entirety of your $Home directory will persist as a 5GB image placed in the specified file share
     2. A `clouddrive` subdirectory under your $Home will sync to the file share for individual file interaction
   * Cloud Console will automatically mount the same share on subsequent sessions
-  * Learn how this works at [Persist Files in Cloud Console](/How-to/acc-persisting-storage.md) 
+  * Learn how this works at [Persist Files in Cloud Console](acc-persisting-storage.md) 
 
-* [How do I upload/download from local machine to Cloud Console?](https://github.com/jluk/ACC-Documentation/blob/master/How-to/acc-persisting-storage.md#upload-or-download-local-files)
+* [How do I upload/download from local machine to Cloud Console?](https://github.com/jluk/ACC-Documentation/blob/master/acc-persisting-storage.md#upload-or-download-local-files)
   * The Azure Files portal GUI syncs to the `clouddrive` subdirectory and can be interacted via Azure portal
-  * Follow [step-by-step upload/download instructions here](https://github.com/jluk/ACC-Documentation/blob/master/How-to/acc-persisting-storage.md#upload-or-download-local-files)
+  * Follow [step-by-step upload/download instructions here](https://github.com/jluk/ACC-Documentation/blob/master/acc-persisting-storage.md#upload-or-download-local-files)
 
-* [What does it cost?](Concepts/acc-pricing.md)
+* [What does it cost?](acc-pricing.md)
   * Cloud Console is free, mounting storage incurs regular Azure Storage charges
 
-* [What tools are installed on the console?](Concepts/acc-features.md)
-  * Check the full [feature list here](Concepts/acc-features.md)
+* [What tools are installed on the console?](acc-features.md)
+  * Check the full [feature list here](acc-features.md)
 
 * Do I have sudo permissions?
   * Sudo permissions are not supported today given the ephemeral nature of Cloud Console
 
-* [How do I copy and paste?](How-to/acc-use-console-window.md)
+* [How do I copy and paste?](acc-use-console-window.md)
   * Currently Windows only supports right-click copy pasting in Chrome and Edge
   * OS X supports cmd-v and cmd-c across all browsers
 
 ## Concepts
 * Machine state and files do not persist beyond the active session by default
-  * You may [mount Azure storage to persist files.](/How-to/acc-persisting-storage.md) 
+  * You may [mount Azure storage to persist files.](acc-persisting-storage.md) 
 * Consoles are assigned at one machine per unique user
   * Your Azure account is the only one with access to your user assigned Cloud Console
 * Permissions are set as a regular Linux user
@@ -73,7 +73,7 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 * Automatic authentication
 * Bring your own Azure Files for file persistence
 
-Check the full [feature list here](Concepts/acc-features.md).
+Check the full [feature list here](acc-features.md).
 
 ## Examples
 * Try out the new Azure CLI 2.0
@@ -88,7 +88,7 @@ The Cloud Console is recommended for Chrome, Edge, and Safari.
 
 The console is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality is subject to specific browser settings.
 
-For all limitations visit [limitations of Cloud Console](Concepts/acc-limitations.md).
+For all limitations visit [limitations of Cloud Console](acc-limitations.md).
 ## Feedback
 ### Azure Advisors
 1. [Advisor Yammer @ aka.ms/accadvisorfeedback](https://aka.ms/accadvisorfeedback) <br>

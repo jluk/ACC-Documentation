@@ -18,29 +18,34 @@ ms.author: juluk
 ---
 
 # Persisting storage (preview)
-By running `createclouddrive` Cloud Console tags an Azure file share to mount and persist files across console sessions. 
+By running `createclouddrive`, Cloud Console tags an Azure file share to mount and persist files across sessions. 
 
-This is a one-time action as the file share will be mounted on every subsequent Cloud Console session. It is highly recommended to mount a file share to enable uses such as
+This is a one-time action as the file share will be mounted on every subsequent session. It is highly recommended to mount a file share to enable uses such as
 * Remembering default subscription settings for Azure CLI 2.0 across console sessions
 * Uploading/downloading local files to/from the Cloud Console via the `clouddrive` subdirectory
 
 When running `createcloudddrive`, Cloud Console will persist files in two ways:
 1. Persist all files in your `$Home` directory as a 5GB image in the specified file share and sync changes automatically <br>
+
 ```
-/Home/<User> -----> fileshare.storage.windows.net/fileshare/.cloudconsole/user.img
+For example: /Home/<User> -----> fileshare.storage.windows.net/fileshare/.cloudconsole/user.img
  ```
+
 2. Place a `clouddrive` subdirectory within your $Home for [individual file interaction via Azure Portal](#upload-or-download-local-files) <br>
+
 ```
-/Home/<User>/clouddrive -----> fileshare.storage.windows.net/fileshare
+For example: /Home/<User>/clouddrive -----> fileshare.storage.windows.net/fileshare
 ```
 
 ## Pre-Requisites
 1. Azure Storage Account type must be LRS or GRS to support file shares. Storage is subject to [regular Azure Files pricing.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 2. Azure Storage Account must be located in one of the below regions to be mounted to Cloud Console:
 
-|Region|
-|---|
-|West US|
+||Region|
+|---|---|
+|Americas|East US, South Central US, West US|
+|Europe|North Europe, West Europe|
+|Asia Pacific|India Central, Southeast Asia|
 
 ## Quick command
 1. Open Cloud Console
@@ -76,10 +81,13 @@ The "tag" is added to the selected storage account using the format: <br>
 To mount an Azure Files storage account: <br>
 1. Open a Cloud Console session <br>
 2. Run: <br>
+
 ```
 createclouddrive -s mySubscription -g myRG -n storageAccountName -f fileShareName
 ```
+
 If successful you will be prompted to restart the console or to create a new storage account if the storage account does not already exist.
+
 ```
 justin@Azure:~$ createclouddrive -s justin-internal-sub -g acc-a0 -n acca0disks656 -f exampleclouddrive
 INFO: Setting subscription (juluk-subscription)
@@ -136,9 +144,9 @@ Options: <br>
 ## Unmounting a file share
 To unmount a fileshare from Cloud Console:
 1. Delete the storage tag on the storage account <br>
-![](../media/unmount-storage.png)
+![](media/unmount-storage.png)
 2. Recycle your Cloud Console <br>
-![](../media/recycle-icon.png)
+![](media/recycle-icon.png)
 
 Your Cloud Console should now be cleared of any mounted shares and open to mount another.
 
@@ -168,10 +176,10 @@ You can utilize the Portal GUI for Azure Files to upload or download files to/fr
 Editing/removing/adding files from within the console will also reflect in the File Storage GUI upon blade refresh.
 
 1. Navigate to the mounted fileshare
-![](../media/touch-txt-storage.png)
+![](media/touch-txt-storage.png)
 2. Select target file in Portal
 3. Hit "Download"
-![](../media/download-storage.png)
+![](media/download-storage.png)
 
 **Note** <br>
 If you need to download a local file that exists in your $Home directory:
@@ -179,6 +187,6 @@ If you need to download a local file that exists in your $Home directory:
 2. Follow [previous steps](#upload-or-download-local-files) <br>
 
 ## Next steps
-[ACC Quickstart](../Get-started/acc-quickstart.md) <br>
+[ACC Quickstart](acc-quickstart.md) <br>
 [About Azure File storage](https://docs.microsoft.com/azure/storage/storage-introduction#file-storage) <br>
 [Learn more about Storage tags](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) <br>
