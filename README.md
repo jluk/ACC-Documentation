@@ -34,10 +34,11 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 
 ## Preview FAQ
 * [How do I persist files across sessions?](acc-persisting-storage.md) 
-  * Mount an Azure file share via `createclouddrive -h` to receive 2 methods of persistence:
-    1. Entirety of your $Home directory will persist as a 5GB image placed in the specified file share
+  * Mount an Azure file share via `createclouddrive -h` to receive file persistence in two areas:
+    1. Entirety of your $Home directory will persist as a 5-GB image placed in the specified file share
     2. A `clouddrive` subdirectory under your $Home will sync to the file share for individual file interaction
   * Cloud Console will automatically mount the same share on subsequent sessions
+  * **NOTE** You must restart Cloud Console to take effect
   * Learn how this works at [Persist Files in Cloud Console](acc-persisting-storage.md) 
 
 * [How do I upload/download from local machine to Cloud Console?](https://github.com/jluk/ACC-Documentation/blob/master/acc-persisting-storage.md#upload-or-download-local-files)

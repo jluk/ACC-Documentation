@@ -24,7 +24,7 @@ This is a one-time action as the file share will be mounted on every subsequent 
 * Remembering default subscription settings for Azure CLI 2.0 across console sessions
 * Uploading/downloading local files to/from the Cloud Console via the `clouddrive` subdirectory
 
-When running `createcloudddrive`, Cloud Console will persist files in two ways:
+When running `createcloudddrive`, Cloud Console will persist files in two areas:
 1. Persist all files in your `$Home` directory as a 5GB image in the specified file share and sync changes automatically <br>
 
 ```
@@ -63,6 +63,8 @@ createclouddrive --subscription mySubscription
                  --storage-account storageAccountName
                  --file-share fileShareName
 ```
+4. Restart Cloud Console via restart icon
+
 Cloud Console will now mount this file share on every console start-up.
 
 ## How it works
