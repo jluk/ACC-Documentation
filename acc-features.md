@@ -1,6 +1,6 @@
 ---
-title: Azure Cloud Console (Preview) Features | Microsoft Docs
-description: Overview of features of Azure Cloud Console
+title: Azure Cloud Shell (Preview) Features | Microsoft Docs
+description: Overview of features of Azure Cloud Shell
 services: 
 documentationcenter: ''
 author: jluk
@@ -18,15 +18,15 @@ ms.author: juluk
 ---
 
 # Features
-Azure Cloud Console offers a browser interactable Bash shell to manage and develop with Azure directly from the Azure portal.
+Azure Cloud Shell offers a browser interactable Bash shell to manage and develop with Azure directly from the Azure portal.
 Each Bash shell is held in a container allocated to you on a per-request basis. As a result, you are not guaranteed the same container 
 on each request.
 
 ## Browser-access to a Bash shell built for Azure
 Azure provides a Bash workstation fully customized for Azure. This sandbox is provided to users as a way to manage, test, and deploy 
 Azure resources without the overhead of installing, versioning, and maintaining a system.
-* Cloud Console runs on a container provisioned on a per-request basis
-* Console terminates after 10 minutes of output inactivity wiping machine state
+* Cloud Shell runs on a container provisioned on a per-request basis
+* Shell terminates after 10 minutes of output inactivity wiping machine state
 
 ### Tools
 |Category   |Name   |
@@ -49,15 +49,15 @@ Azure resources without the overhead of installing, versioning, and maintaining 
 |Go         |1.7        |
 
 ## Automatic authentication
-Cloud Console immediately authenticates the Azure CLI 2.0 with the same credentials used to login to Azure portal.
+Cloud Shell immediately authenticates the Azure CLI 2.0 with the same credentials used to login to Azure portal.
 
 ## Bring your own storage persistence
-Since the Cloud Console is allocated on a per-request basis on a temporary container, files do not persist across sessions by default.
+Since Cloud Shell is allocated on a per-request basis on a temporary container, files do not persist across sessions by default.
 
 To persist files across sessions, mount an Azure file share in West US.
-Once a fileshare is associated with your console, it will be mounted on each subsequent console on start-up.
+Once a fileshare is associated with Cloud Shell, it will be mounted on each subsequent start-up.
 
-[Learn how to attach Azure file shares to Cloud Console.](acc-persisting-storage.md).
+[Learn how to attach Azure file shares to Cloud Shell.](acc-persisting-storage.md).
 
 ## Next steps
 [ACC Quickstart](acc-quickstart.md) <br>

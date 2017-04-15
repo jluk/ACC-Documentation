@@ -1,6 +1,6 @@
 ---
-title: Azure Cloud Console Quickstart | Microsoft Docs
-description: Quickstart for the Azure Cloud Console
+title: Azure Cloud Shell Quickstart | Microsoft Docs
+description: Quickstart for the Azure Cloud Shell
 services: 
 documentationcenter: ''
 author: jluk
@@ -18,7 +18,7 @@ ms.author: juluk
 ---
 
 # Quickstart (preview)
-This document details how to use the Azure Cloud Console in the [Azure Portal](https://ms.portal.azure.com/).
+This document details how to use the Azure Cloud Shell in the [Azure Portal](https://ms.portal.azure.com/).
 
 The requirements are:
 * [An Azure account](https://azure.microsoft.com/pricing/free-trial/)
@@ -27,10 +27,10 @@ The requirements are:
 ## Sign in
 Sign into the Azure portal with your Azure account identity, click **+ New** in the upper left corner:
 
-![](media/console-icon.png)
+![](media/shell-icon.png)
 
-## Start console
-Click the **Start Azure Cloud Console** button in the top navigation bar of the page.
+## Start Cloud Shell
+Click the **Start Azure Cloud Shell** button in the top navigation bar of the page.
 
 You are now authenticated and ready to begin use.
 
@@ -47,14 +47,14 @@ Create a new resouce group in WestUS named "MyRG": <br>
 `az group create -l westus -n MyRG` <br>
 
 ## Mount a file share to persist files
-The Cloud Console allows attaching any Azure Files Storage you have to persist anything in your user $home directory.
-The Cloud Console will save your $home directory as an image to the mounted file share. This image will default to 5GB and incur regular Azure Storage charges (~$0.40/month).
+The Cloud Shell allows attaching any Azure Files Storage you have to persist anything in your user $home directory.
+The Cloud Shell will save your $home directory as an image to the mounted file share. This image will default to 5GB and incur regular Azure Storage charges (~$0.40/month).
 
 [Click here for details on Azure Files pricing.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
 
-1. Create a new Azure file share and mount it to the Cloud Console <br>
+1. Create a new Azure file share and mount it to the Cloud Shell <br>
 `createclouddrive --subscription uniqueSubscriptionGUID --resource-group MyRG --storage-account MyUniqueSA --file-share myfileshare -F`
-2. Restart your console by typing `exit` then hitting the "Enter" key
+2. Restart your Shell by typing `exit` then hitting the "Enter" key
 3. You will now receive a clouddrive subdirectory to upload/download to/from your local machine and changes in your user $home will persist as an image stored in the file share.
 
 Full details are detailed in the [persisting storage documentation.](acc-persisting-storage.md)
@@ -69,18 +69,18 @@ Create an Ubuntu VM in your new resource group. The Azure CLI 2.0 will create ss
 
 ![](media/sshcmd-copy.png)
 
-**Note** The public and private keys used to create your VM are placed in `/User/.ssh/id_rsa` and `User/.ssh/id_rsa.pub` of your Cloud Console.
+**Note** The public and private keys used to create your VM are placed in `/User/.ssh/id_rsa` and `User/.ssh/id_rsa.pub` of your Cloud Shell.
 
-Upon establishing the SSH connection, you should see the Ubuntu welcome prompt. You may now interact with your new VM via Cloud Console!
+Upon establishing the SSH connection, you should see the Ubuntu welcome prompt. You may now interact with your new VM via Cloud Shell!
 ![](media/ubuntu-welcome.png)
 
 ## Cleaning up 
 Delete your resource group holding your VM and storage account: <br>
 `az group delete -n MyRG`
 
-Exit the console using the 'x' in the top right corner of the console window. Console sessions will be active for 10 minutes after the last output at which point it will timeout. You may reactivate a console at anytime.
+Exit Cloud Shell using the 'x' in the top right corner of the window. Cloud shell sessions will be active for 10 minutes after the last output at which point it will timeout. You may reactivate Cloud Shell at anytime.
 
 ## Next Steps
-[Learn more about persisting storage on Cloud Console](acc-persisting-storage.md) <br>
+[Learn more about persisting storage on Cloud Shell](acc-persisting-storage.md) <br>
 [Learn more about Azure CLI 2.0] (https://docs.microsoft.com/en-us/cli/azure/) <br>
 [Learn more about Azure File Storage] (https://docs.microsoft.com/en-us/azure/storage/storage-introduction#file-storage) <br>

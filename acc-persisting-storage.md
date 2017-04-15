@@ -1,6 +1,6 @@
 ---
-title: Persisting files in Azure Cloud Console (Preview) | Microsoft Docs
-description: Walkthrough of how to mount Azure file shares to the Azure Cloud Console.
+title: Persisting files in Azure Cloud Shell (Preview) | Microsoft Docs
+description: Walkthrough of how to mount Azure file shares to the Azure Cloud Shell.
 services: 
 documentationcenter: ''
 author: jluk
@@ -18,17 +18,17 @@ ms.author: juluk
 ---
 
 # Persisting storage (preview)
-By running `createclouddrive`, Cloud Console tags an Azure file share to mount and persist files across sessions. 
+By running `createclouddrive`, Cloud Shell tags an Azure file share to mount and persist files across sessions. 
 
 This is a one-time action as the file share will be mounted on every subsequent session. It is highly recommended to mount a file share to enable uses such as
-* Remembering default subscription settings for Azure CLI 2.0 across console sessions
-* Uploading/downloading local files to/from the Cloud Console via the `clouddrive` subdirectory
+* Remembering default subscription settings for Azure CLI 2.0 across Cloud Shell sessions
+* Uploading/downloading local files to/from the Cloud Shell via the `clouddrive` subdirectory
 
-When running `createcloudddrive`, Cloud Console will persist files in two areas:
+When running `createcloudddrive`, Cloud Shell will persist files in two areas:
 1. Persist all files in your `$Home` directory as a 5GB image in the specified file share and sync changes automatically <br>
 
 ```
-For example: /Home/<User> -----> fileshare.storage.windows.net/fileshare/.cloudconsole/user.img
+For example: /Home/<User> -----> fileshare.storage.windows.net/fileshare/.cloudshell/user.img
  ```
 
 2. Place a `clouddrive` subdirectory within your $Home for [individual file interaction via Azure Portal](#upload-or-download-local-files) <br>
@@ -39,7 +39,7 @@ For example: /Home/<User>/clouddrive -----> fileshare.storage.windows.net/filesh
 
 ## Pre-Requisites
 1. Azure Storage Account type must be LRS or GRS to support file shares. Storage is subject to [regular Azure Files pricing.](https://azure.microsoft.com/en-us/pricing/details/storage/files/)
-2. Azure Storage Account must be located in one of the below regions to be mounted to Cloud Console:
+2. Azure Storage Account must be located in one of the below regions to be mounted to Cloud Shell:
 
 ||Region|
 |---|---|
@@ -48,7 +48,7 @@ For example: /Home/<User>/clouddrive -----> fileshare.storage.windows.net/filesh
 |Asia Pacific|India Central, Southeast Asia|
 
 ## Quick command
-1. Open Cloud Console
+1. Open Cloud Shell
 2. Find or create a Resource Group to hold your storage account. **NOTE: The resource group must exist for `createclouddrive` to succeed.**
 ```
 ## create a resource group from Azure CLI 2.0
@@ -63,32 +63,32 @@ createclouddrive --subscription mySubscription
                  --storage-account storageAccountName
                  --file-share fileShareName
 ```
-4. Restart Cloud Console via restart icon
+4. Restart Cloud Shell via restart icon
 
-Cloud Console will now mount this file share on every console start-up.
+Cloud Shell will now mount this file share on every session start-up.
 
 ## How it works
-Persisting files in Cloud Console follows this process: <br>
+Persisting files in Cloud Shell follows this process: <br>
 1. Specify a file share **in West US** to mount via `createclouddrive` command
-2. Cloud Console will place a "tag" on the storage account specifying the file share to mount
-3. On every subsequent console session, Cloud Console searches for the "tag" on start and it mounts on /usr/username/clouddrive if found
+2. Cloud Shell will place a "tag" on the storage account specifying the file share to mount
+3. On every subsequent session, Cloud Shell searches for the "tag" on start and it mounts on /usr/username/clouddrive if found
 
 The "tag" is added to the selected storage account using the format: <br>
 
 | Key | Value |
 |:-------------:|:-------------:|
-|cloud-console-files-for-user@domain.com|fileshareName|
+|cloud-shell-files-for-user@domain.com|fileshareName|
 
 ## Mounting file share walkthrough
 To mount an Azure Files storage account: <br>
-1. Open a Cloud Console session <br>
+1. Open a Cloud Shell session <br>
 2. Run: <br>
 
 ```
 createclouddrive -s mySubscription -g myRG -n storageAccountName -f fileShareName
 ```
 
-If successful you will be prompted to restart the console or to create a new storage account if the storage account does not already exist.
+If successful you will be prompted to restart Cloud Shell or to create a new storage account if the storage account does not already exist.
 
 ```
 justin@Azure:~$ createclouddrive -s justin-internal-sub -g acc-a0 -n acca0disks656 -f exampleclouddrive
@@ -123,14 +123,14 @@ INFO: Getting storage account (acca0disks656) in resource group (acc-a0)
   "statusOfPrimary": "available",
   "statusOfSecondary": null,
   "tags": {
-    "cloud-console-files-for-juluk@microsoft.com": "exampleclouddrive"
+    "cloud-shell-files-for-juluk@microsoft.com": "exampleclouddrive"
   },
   "type": "Microsoft.Storage/storageAccounts"
 }
-INFO: Provision succeeds. Please type 'exit' to restart the console.
+INFO: Provision succeeds. Please type 'exit' to restart Cloud Shell.
 ```
 
-You should now be able to upload/download to/from your fileshare from the `clouddrive` directory within the Cloud Console.
+You should now be able to upload/download to/from your fileshare from the `clouddrive` directory within the Cloud Shell.
 Uploading/downloading from/to your local machine can be done via the Azure Files portal blades.
 
 To see more details run `createclouddrive -h`: <br>
@@ -144,13 +144,13 @@ Options: <br>
   -? | -h | --help Shows this usage text <br>
 ```
 ## Unmounting a file share
-To unmount a fileshare from Cloud Console:
+To unmount a fileshare from Cloud Shell:
 1. Delete the storage tag on the storage account <br>
 ![](media/unmount-storage.png)
-2. Recycle your Cloud Console <br>
+2. Recycle your Cloud Shell <br>
 ![](media/recycle-icon.png)
 
-Your Cloud Console should now be cleared of any mounted shares and open to mount another.
+Your Cloud Shell should now be cleared of any mounted shares and open to mount another.
 
 ## Updating a file share
 1. Follow process to [unmount a file share](#unmounting-a-file-share)
@@ -175,7 +175,7 @@ justin@Azure:~$
 
 ## Upload or download local files
 You can utilize the Portal GUI for Azure Files to upload or download files to/from storage.
-Editing/removing/adding files from within the console will also reflect in the File Storage GUI upon blade refresh.
+Editing/removing/adding files from within Cloud Shell will also reflect in the File Storage GUI upon blade refresh.
 
 1. Navigate to the mounted fileshare
 ![](media/touch-txt-storage.png)
