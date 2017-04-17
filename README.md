@@ -77,9 +77,9 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 Check the full [feature list here](acc-features.md).
 
 ## Examples
-* Try out the new Azure CLI 2.0
-* Manage resources via GUI or CLI, side-by-side
-* Run scripts on Azure resources without leaving your browser
+* Create or edit scripts to manage Azure resources from any browser
+* Simultaneously manage resources via portal and command line
+* Test-drive Azure CLI 2.0
 
 ## Pricing
 The Cloud Shell is a free service to all Azure customers. Regular storage costs apply if mounting an Azure file share.
