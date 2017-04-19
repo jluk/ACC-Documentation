@@ -38,7 +38,6 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
     1. Entirety of your $Home directory will persist as a 5-GB image placed in the specified file share
     2. A `clouddrive` subdirectory under your $Home will sync to the file share for individual file interaction
   * Cloud Shell will automatically mount the same share on subsequent sessions
-  * **NOTE** You must restart Cloud Shell to take effect
   * Learn how this works at [Persist Files in Cloud Shell](acc-persisting-storage.md) 
 
 * [How do I upload/download from local machine to Cloud Shell?](https://github.com/jluk/ACC-Documentation/blob/master/acc-persisting-storage.md#upload-or-download-local-files)

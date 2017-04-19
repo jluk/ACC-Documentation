@@ -63,7 +63,6 @@ createclouddrive --subscription mySubscription
                  --storage-account storageAccountName
                  --file-share fileShareName
 ```
-4. Restart Cloud Shell via restart icon
 
 Cloud Shell will now mount this file share on every session start-up.
 
@@ -87,51 +86,6 @@ To mount an Azure Files storage account: <br>
 ```
 createclouddrive -s mySubscription -g myRG -n storageAccountName -f fileShareName
 ```
-
-If successful you will be prompted to restart Cloud Shell or to create a new storage account if the storage account does not already exist.
-
-```
-justin@Azure:~$ createclouddrive -s justin-internal-sub -g acc-a0 -n acca0disks656 -f exampleclouddrive
-INFO: Setting subscription (juluk-subscription)
-INFO: User Principal Name: juluk@microsoft.com
-INFO: Getting storage account (acca0disks656) in resource group (acc-a0)
-{
-  "accessTier": null,
-  "creationTime": "2017-03-02T19:43:03.975183+00:00",
-  "customDomain": null,
-  "encryption": null,
-  "id": "/subscriptions/ex-subscription-guid/resourceGroups/acc-a0/providers/Microsoft.Storage/storageAccounts/acca0disks656",
-  "kind": "Storage",
-  "lastGeoFailoverTime": null,
-  "location": "westus",
-  "name": "acca0disks656",
-  "primaryEndpoints": {
-    "blob": "https://acca0disks656.blob.core.windows.net/",
-    "file": "https://acca0disks656.file.core.windows.net/",
-    "queue": "https://acca0disks656.queue.core.windows.net/",
-    "table": "https://acca0disks656.table.core.windows.net/"
-  },
-  "primaryLocation": "westus",
-  "provisioningState": "Succeeded",
-  "resourceGroup": "acc-a0",
-  "secondaryEndpoints": null,
-  "secondaryLocation": null,
-  "sku": {
-    "name": "Standard_LRS",
-    "tier": "Standard"
-  },
-  "statusOfPrimary": "available",
-  "statusOfSecondary": null,
-  "tags": {
-    "cloud-shell-files-for-juluk@microsoft.com": "exampleclouddrive"
-  },
-  "type": "Microsoft.Storage/storageAccounts"
-}
-INFO: Provision succeeds. Please type 'exit' to restart Cloud Shell.
-```
-
-You should now be able to upload/download to/from your fileshare from the `clouddrive` directory within the Cloud Shell.
-Uploading/downloading from/to your local machine can be done via the Azure Files portal blades.
 
 To see more details run `createclouddrive -h`: <br>
 ```
