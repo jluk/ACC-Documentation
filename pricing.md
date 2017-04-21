@@ -1,6 +1,6 @@
 ---
-title: Azure Cloud Console Pricing | Microsoft Docs
-description: Overview of pricing of Azure Cloud Console
+title: Azure Cloud Shell Pricing (PREVIEW) | Microsoft Docs
+description: Overview of pricing of Azure Cloud Shell
 services: 
 documentationcenter: ''
 author: jluk
@@ -18,9 +18,9 @@ ms.author: juluk
 ---
 
 # Pricing
-Azure Cloud Console is provided for free. Any accessory Azure resources incur regular costs.
+Azure Cloud Shell is provided for free, with Azure Files incurring regular costs.
 
 ## Storage
-Attaching persistent storage via `createclouddrive` incurs regular storage costs. This includes any files and the default 5GB image used to persist your $HOME directory.
+Attaching storage via `createclouddrive` incurs regular storage costs. This includes any files and the default 5GB image used to persist your $HOME directory.
 
 Check [here for details on Azure Files costs](https://azure.microsoft.com/en-us/pricing/details/storage/files/).

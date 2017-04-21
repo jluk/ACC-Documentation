@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Shell (Preview) Overview | Microsoft Docs
+title: Azure Cloud Shell (PREVIEW) Overview | Microsoft Docs
 description: Overview of the Azure Cloud Shell.
 services: 
 documentationcenter: ''
@@ -16,7 +16,7 @@ ms.topic: article
 ms.date: 03/22/2017
 ms.author: juluk
 ---
-# Azure Cloud Shell (preview)
+# Azure Cloud Shell (PREVIEW)
 Azure Cloud Shell is an interactive, browser-based command-line interface for managing Azure resources.
 
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
@@ -33,47 +33,48 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 2. Launch the Cloud Shell via the terminal icon on the top navigation pane.
 
 ## Preview FAQ
-* [How do I persist files across sessions?](acc-persisting-storage.md) 
-  * Mount an Azure file share via `createclouddrive -h` to receive file persistence in two areas:
-    1. Entirety of your $Home directory will persist as a 5-GB image placed in the specified file share
-    2. A `clouddrive` subdirectory under your $Home will sync to the file share for individual file interaction
-  * Cloud Shell will automatically mount the same share on subsequent sessions
-  * Learn how this works at [Persist Files in Cloud Shell](acc-persisting-storage.md) 
+* [How do I persist files across sessions?](persisting-shell-storage.md) 
+  * Attach an Azure file share with `createclouddrive -h` to receive file persistence with both
+    1. Your $Home directory persists as a 5-GB image placed in the attached file share
+    2. File share mounts as `clouddrive` subdirectory under your $Home to sync individual file interactions
+  * Cloud Shell automatically attaches file share for future sessions
+  * Learn how this works at [Persist Files in Cloud Shell](persisting-shell-storage.md) 
 
-* [How do I upload/download from local machine to Cloud Shell?](https://github.com/jluk/ACC-Documentation/blob/master/acc-persisting-storage.md#upload-or-download-local-files)
+* [How do I upload/download from local machine to Cloud Shell?](https://github.com/jluk/ACC-Documentation/blob/master/persisting-shell-storage.md#upload-or-download-local-files)
   * The Azure Files portal GUI syncs to the `clouddrive` subdirectory and can be interacted via Azure portal
-  * Follow [step-by-step upload/download instructions here](https://github.com/jluk/ACC-Documentation/blob/master/acc-persisting-storage.md#upload-or-download-local-files)
+  * Follow [step-by-step upload/download instructions here](https://github.com/jluk/ACC-Documentation/blob/master/persisting-shell-storage.md#upload-or-download-local-files)
 
-* [What does it cost?](acc-pricing.md)
-  * Cloud Shell is free, mounting storage incurs regular Azure Storage charges
+* [What does it cost?](pricing.md)
+  * Cloud Shell is free, attaching storage incurs regular Azure Storage charges
 
-* [What tools are installed on Cloud Shell?](acc-features.md)
-  * Check the full [feature list here](acc-features.md)
+* [What tools are installed on Cloud Shell?](features.md)
+  * Common tools and programming languages are pre-installed
+  * Check the full [feature list here](features.md)
 
 * Do I have sudo permissions?
   * Sudo permissions are not supported today given the ephemeral nature of Cloud Shell
 
-* [How do I copy and paste?](acc-use-shell-window.md)
+* [How do I copy and paste?](using-the-shell-window.md)
   * Currently Windows only supports right-click copy pasting in Chrome and Edge
   * OS X supports cmd-v and cmd-c across all browsers
 
 ## Concepts
 * Machine state and files do not persist beyond the active session by default
-  * You may [mount Azure storage to persist files.](acc-persisting-storage.md) 
+  * You may [mount Azure storage to persist files.](persisting-shell-storage.md) 
 * Cloud Shells are assigned at one machine per unique user
   * Your Azure account is the only one with access to your user assigned Cloud Shell
 * Permissions are set as a regular Linux user
   * You may install packages via curl to your $Home directory
 
 * Cloud Shell runs on an ephemeral machine provided on a per-session, per-user basis
-* Cloud Shell times out after 10 minutes without output activity
+* Cloud Shell times out and recycles after 10 minutes without interactive activity
 
 ## Features
 * A browser-based BASH workstation built for Azure
 * Automatic authentication
 * Bring your own Azure Files for file persistence
 
-Check the full [feature list here](acc-features.md).
+Check the full [feature list here](features.md).
 
 ## Examples
 * Create or edit scripts to manage Azure resources from any browser
@@ -88,7 +89,7 @@ The Cloud Shell is recommended for Chrome, Edge, and Safari.
 
 The Cloud Shell is supported for Chrome, Firefox, Safari, IE, and Edge, but shortcut functionality is subject to specific browser settings.
 
-For all limitations visit [limitations of Cloud Shell](acc-limitations.md).
+For all limitations visit [limitations of Cloud Shell](limitations.md).
 ## Feedback
 ### Azure Advisors
 1. [Advisor Yammer @ aka.ms/accadvisorfeedback](https://aka.ms/accadvisorfeedback) <br>
