@@ -18,9 +18,6 @@ ms.author: juluk
 ---
 
 # Persisting Cloud Shell files
-On first start, Cloud Shell asks for your subscription to create an LRS storage account and Azure file share for you. 
-This is used to store a 5-GB image that automatically updates and persists your $Home directory. This file share will attach as `clouddrive` under your $Home directory.
-This is a one-time action and this is automatically done for future sessions.
 
 Cloud Shell will persist files with both methods below:
 1. Persist all files in your `$Home` directory as a 5-GB (default size) image in the specified file share and sync automatically <br>
@@ -80,9 +77,12 @@ Options: <br>
 ```
 
 ## List file share
-To find details about your mounted storage run `df`. The filepath to clouddrive will show your storage account name and fileshare in the url.
+To find details about your attached share
+1. Run `df`
 
-`//storageaccountname.file.core.windows.net/filesharename`
+The filepath to clouddrive will show your storage account name and fileshare in the url.
+
+Example: `//storageaccountname.file.core.windows.net/filesharename`
 
 ```
 justin@Azure:~$ df

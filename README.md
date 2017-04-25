@@ -100,5 +100,5 @@ For all limitations visit [limitations of Cloud Shell](limitations.md).
 
 ## Known Preview Issues
 1. CLI 2.0 cmd and autocomplete performance
-2. Shortcuts (ctrl-v and ctrl-c) not supported on Windows during Preview
+2. Ctrl-v and ctrl-c not supported on Windows, use ctrl-insert and shift-insert instead
 3. Right-click paste not supported on IE/Firefox

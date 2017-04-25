@@ -34,7 +34,7 @@ The container providing your Cloud Shell session is temporary and is recycled af
 Cloud Shell supports the latest versions of Microsoft Edge, Microsoft Internet Explorer, Google Chrome, Mozilla Firefox, and Apple Safari.
 However, Safari in private mode is not supported.
 
-Currently Windows machines do not support keyboard shortcuts. 
+Currently Windows machines do not support ctrl-c/ctrl-v use ctrl-insert/shift-insert instead. 
 Utilize right-click copy paste options if needed, however Firefox and Internet Explorer do not support right-click permissions.
 
 ## Usage limits

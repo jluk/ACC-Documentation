@@ -20,11 +20,10 @@ ms.author: juluk
 # Using the console window
 This document explains how to use the Azure Cloud Console window.
 
-## Copy Paste
-* Cmd-C and Cmd-V to copy paste on Mac
-  * Shortcuts are currently not supported on Windows - please use right click to paste
-* Right-click to copy or paste on Windows and Mac
-  * Not supported on FireFox or Internet Explorer
+## Copy/paste
+* Windows: Ctrl-insert and Shift-insert or right-click dropdown to copy/paste
+  * FireFox/IE may not support clipboard permissions properly
+* Mac OS: Cmd-c and Cmd-v or right-click dropdown to copy/paste
 
 ## Resize console window
 * Click and drag the toolbar up or down to resize the console window
