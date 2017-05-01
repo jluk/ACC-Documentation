@@ -19,6 +19,8 @@ ms.author: juluk
 # Azure Cloud Shell (PREVIEW)
 Azure Cloud Shell is an interactive, browser-based command-line interface for managing Azure resources.
 
+![](media/cloud_shell.png)
+
 The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/accbetadocs)
 
 ## Preview access 
@@ -26,6 +28,7 @@ The shortlink to this documentation is [aka.ms/accbetadocs](https://www.aka.ms/a
 1. Get whitelisted from the forms shared in the Advisor Yammer (steady rollout beginning end of March)
 2. Navigate to [aka.ms/accbeta](https://www.aka.ms/accbeta)
 3. Launch the Shell via the terminal icon on the top navigation pane.
+
 ![](media/shell-icon.png)
 
 ### Internals
