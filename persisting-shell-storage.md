@@ -41,7 +41,8 @@ If manually attaching a file share, storage accounts must be:
 
 ### Supported storage regions
 Your Cloud Shell will be provisioned in the same region as attached storage.
-||Region|
+
+|Name|Region|
 |---|---|
 |Americas|East US, South Central US, West US|
 |Europe|North Europe, West Europe|
